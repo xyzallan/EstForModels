@@ -4,7 +4,7 @@
 \alias{mdl_h100}
 \title{Site index model}
 \usage{
-mdl_h100(Species, Stand_Age, Stand_Height, Base_Age)
+mdl_h100(Species, Stand_Age, Stand_Height, Base_Age = 100)
 }
 \arguments{
 \item{Species}{tree species}
@@ -17,6 +17,10 @@ mdl_h100(Species, Stand_Age, Stand_Height, Base_Age)
 }
 \description{
 Site index model
+}
+\examples{
+mdl_h100("MA", 100, 20, seq(60, 140, by=20))
+
 }
 \author{
 Allan Sims

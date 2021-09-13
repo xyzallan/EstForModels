@@ -4,8 +4,9 @@
 #' @param Stand_Age main species age
 #' @param Stand_Height main species average height
 #' @param Base_Age Age of site index height
-
-mdl_h100 <- function(Species, Stand_Age, Stand_Height, Base_Age)
+#' @examples mdl_h100("MA", 100, 20, seq(60, 140, by=20))
+#' 
+mdl_h100 <- function(Species, Stand_Age, Stand_Height, Base_Age = 100)
 {
         grp.1 <- c("MA"  ,  "TA"  ,  "SA"  ,  "VA"  ,  "JA"  ,  "KP")
         H.mdl.180.1<-function(p02, p03, p04){
@@ -37,4 +38,3 @@ mdl_h100 <- function(Species, Stand_Age, Stand_Height, Base_Age)
 
 }
 
-#' @example mdl_h100("MA", 100, 20, seq(60, 140, by=20))
