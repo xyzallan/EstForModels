@@ -25,12 +25,14 @@ mdl_h100 <- function(Species, Stand_Age, Stand_Height, Base_Age)
          return(ipf1 / (1+((0.7298)+(-0.0161) * ipf1) * ((50 / p04)^(1.346)-1)))
         }
         
-        ifelse(Species %in% grp.1,
-                H.mdl.180.1(Stand_Age, Stand_Height, Base_Age),
-        ifelse(Species %in% grp.2,
-                H.mdl.180.2(Stand_Age, Stand_Height, Base_Age),
-                H.mdl.180.3(Stand_Age, Stand_Height, Base_Age)
-        ))
+        with(data.frame(xPl = Species, Ax = Stand_Age, Hx = Stand_Height, A100 = Base_Age))
+        ifelse(xPl %in% grp.1,
+                H.mdl.180.1(Ax, Hx, A100),
+        ifelse(xPl %in% grp.2,
+                H.mdl.180.2(Ax, Hx, A100),
+                H.mdl.180.3(Ax, Hx, A100)
+        )
+        )
 
 
 }
