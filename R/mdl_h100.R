@@ -1,3 +1,5 @@
+#' @title Site index model
+
 mdl_h100 <- function(Species, Stand_Age, Stand_Height, Base_Age)
 {
 grp.1 <- c("MA"  ,  "TA"  ,  "SA"  ,  "VA"  ,  "JA"  ,  "KP")
