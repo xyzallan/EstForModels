@@ -36,3 +36,5 @@ mdl_h100 <- function(Species, Stand_Age, Stand_Height, Base_Age)
 
 
 }
+
+#' @example mdl_h100("MA", 100, 20, seq(60, 140, by=20))
