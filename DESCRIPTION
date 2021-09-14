@@ -1,8 +1,8 @@
-Package: EstForModels
-Title: Estonian Forestry Models
+Package: ForMISmodels
+Title: Forestry Models in ForMIS
 Version: 0.1.0
 Author: Allan Sims
-Description: Estonian Forestry Models
+Description: Forestry Models in ForMIS
 Maintainer: Allan Sims <allan.sims@emu.ee>
 License: GPL v2
 RoxygenNote: 7.1.1
