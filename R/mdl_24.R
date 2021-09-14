@@ -1,8 +1,9 @@
-#' @title Stem A
-#' @return Stem A
-#' @param p01 Stem Spec
-#' @param p02 Area Bon
+#' @title single tree (stem), age (breast height)
+#' @return single tree (stem), age (breast height)
+#' @param p01 single tree (stem), species 
+#' @param p02 stand (area), bonitet 
 mdl_A_24 <- function(p01, p02){
+
 	xmdl.1<-function(p02){
 		c02 = 0.123
 		c03 = 0.012
@@ -10,6 +11,7 @@ mdl_A_24 <- function(p01, p02){
 		c01 = 0.072
 		c04+p02 * (c03+p02 * (c02+p02 * c01))
 	}
+
 	xmdl.2<-function(p02){
 		c02 = -0.394
 		c03 = 0.595
@@ -17,6 +19,7 @@ mdl_A_24 <- function(p01, p02){
 		c01 = 0.146
 		c04+p02 * (c03+p02 * (c02+p02 * c01))
 	}
+
 	xmdl.3<-function(p02){
 		c02 = -0.154
 		c03 = 0.473
@@ -24,6 +27,7 @@ mdl_A_24 <- function(p01, p02){
 		c01 = 0.054
 		c04+p02 * (c03+p02 * (c02+p02 * c01))
 	}
+
 	xmdl.4<-function(p02){
 		c02 = 0.232
 		c03 = 0.092
@@ -31,6 +35,7 @@ mdl_A_24 <- function(p01, p02){
 		c01 = -0.021
 		c04+p02 * (c03+p02 * (c02+p02 * c01))
 	}
+
 	xmdl.5<-function(p02){
 		c02 = 0.346
 		c03 = -0.043
@@ -38,6 +43,7 @@ mdl_A_24 <- function(p01, p02){
 		c01 = -0.027
 		c04+p02 * (c03+p02 * (c02+p02 * c01))
 	}
+
 	xmdl.6<-function(p02){
 		c02 = -0.057
 		c03 = 0.712
@@ -54,5 +60,5 @@ mdl_A_24 <- function(p01, p02){
 		ifelse(p01 %in% c('LM'), xmdl.5(p02), 
 		ifelse(p01 %in% c('LV'), xmdl.6(p02), 
 		NA
-		)))))))
+	)))))))
 }

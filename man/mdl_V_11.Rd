@@ -2,26 +2,26 @@
 % Please edit documentation in R/mdl_11.R
 \name{mdl_V_11}
 \alias{mdl_V_11}
-\title{Stem V}
+\title{stand (stem), volume ()}
 \usage{
 mdl_V_11(p01, p02, p03, p04, p05, p06)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{stand (stem), age}
 
-\item{p03}{Stem A}
+\item{p03}{stand (stem), age (random point)}
 
-\item{p04}{Stem V}
+\item{p04}{stand (stem), volume}
 
-\item{p05}{Area OHOR}
+\item{p05}{stand (area), humus layer}
 
-\item{p06}{Area Cult}
+\item{p06}{stand (area), cultivated}
 }
 \value{
-Stem V
+stand (stem), volume ()
 }
 \description{
-Stem V
+stand (stem), volume ()
 }

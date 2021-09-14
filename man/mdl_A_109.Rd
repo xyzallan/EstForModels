@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_109.R
 \name{mdl_A_109}
 \alias{mdl_A_109}
-\title{Stem A}
+\title{stand (stem), age (mature)}
 \usage{
 mdl_A_109(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height (100 years old)}
 }
 \value{
-Stem A
+stand (stem), age (mature)
 }
 \description{
-Stem A
+stand (stem), age (mature)
 }

@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_172.R
 \name{mdl_V_172}
 \alias{mdl_V_172}
-\title{Bark V}
+\title{single tree (bark), volume}
 \usage{
 mdl_V_172(p01, p02)
 }
 \arguments{
-\item{p01}{Bark Spec}
+\item{p01}{single tree (bark), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 }
 \value{
-Bark V
+single tree (bark), volume
 }
 \description{
-Bark V
+single tree (bark), volume
 }

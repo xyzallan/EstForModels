@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_7.R
 \name{mdl_H_7}
 \alias{mdl_H_7}
-\title{Stem H}
+\title{species level (stem), height ()}
 \usage{
 mdl_H_7(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{species level (stem), age}
 
-\item{p03}{Stem H}
+\item{p03}{species level (stem), height}
 
-\item{p04}{Stem A}
+\item{p04}{species level (stem), age (random point)}
 }
 \value{
-Stem H
+species level (stem), height ()
 }
 \description{
-Stem H
+species level (stem), height ()
 }

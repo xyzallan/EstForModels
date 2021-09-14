@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_86.R
 \name{mdl_H_86}
 \alias{mdl_H_86}
-\title{Stem H}
+\title{stand (stem), height (dominant)}
 \usage{
 mdl_H_86(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{stand (stem), age (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height (100 years old)}
 }
 \value{
-Stem H
+stand (stem), height (dominant)
 }
 \description{
-Stem H
+stand (stem), height (dominant)
 }

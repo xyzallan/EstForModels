@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_25.R
 \name{mdl_V_25}
 \alias{mdl_V_25}
-\title{Stem V}
+\title{species level (stem), volume}
 \usage{
 mdl_V_25(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{species level (stem), height}
 }
 \value{
-Stem V
+species level (stem), volume
 }
 \description{
-Stem V
+species level (stem), volume
 }

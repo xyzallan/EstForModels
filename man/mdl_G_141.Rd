@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_141.R
 \name{mdl_G_141}
 \alias{mdl_G_141}
-\title{Stem G}
+\title{species level (stem), basal area (breast height)}
 \usage{
 mdl_G_141(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{species level (stem), age}
 
-\item{p03}{Stem H}
+\item{p03}{species level (stem), height (20 years old)}
 }
 \value{
-Stem G
+species level (stem), basal area (breast height)
 }
 \description{
-Stem G
+species level (stem), basal area (breast height)
 }

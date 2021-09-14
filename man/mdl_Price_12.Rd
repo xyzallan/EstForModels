@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_12.R
 \name{mdl_Price_12}
 \alias{mdl_Price_12}
-\title{Stem Price}
+\title{species level (stem), price}
 \usage{
 mdl_Price_12(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{species level (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{species level (stem), height}
 }
 \value{
-Stem Price
+species level (stem), price
 }
 \description{
-Stem Price
+species level (stem), price
 }

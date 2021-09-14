@@ -1,10 +1,11 @@
-#' @title Stem D
-#' @return Stem D
-#' @param p01 Stem Spec
-#' @param p02 Stem H
-#' @param p03 Stem A
-#' @param p04 Stem H
+#' @title stand (stem), diameter (breast height)
+#' @return stand (stem), diameter (breast height)
+#' @param p01 stand (stem), species 
+#' @param p02 stand (stem), height 
+#' @param p03 stand (stem), age 
+#' @param p04 stand (stem), height (100 years old)
 mdl_D_30 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c02 = 0.0075
 		c03 = 0.0
@@ -17,6 +18,7 @@ mdl_D_30 <- function(p01, p02, p03, p04){
 		c01 = 2.322
 		p02 * (c01+c02 * p03+c03 / p03+c04 * sqrt(p03)+c05 * log(p03)+c06 * p04+c07 * p04^2+c08 * log(p04))
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c02 = -0.000156
 		c03 = -4.8
@@ -29,6 +31,7 @@ mdl_D_30 <- function(p01, p02, p03, p04){
 		c01 = 1.92
 		p02 * (c01+c02 * p03+c03 / p03+c04 * sqrt(p03)+c05 * log(p03)+c06 * p04+c07 * p04^2+c08 * log(p04))
 	}
+
 	xmdl.3<-function(p02, p03, p04){
 		c02 = 0.0
 		c03 = 0.0
@@ -41,6 +44,7 @@ mdl_D_30 <- function(p01, p02, p03, p04){
 		c01 = 1.245
 		p02 * (c01+c02 * p03+c03 / p03+c04 * sqrt(p03)+c05 * log(p03)+c06 * p04+c07 * p04^2+c08 * log(p04))
 	}
+
 	xmdl.4<-function(p02, p03, p04){
 		c03 = 0.0
 		c04 = 0.0
@@ -53,6 +57,7 @@ mdl_D_30 <- function(p01, p02, p03, p04){
 		c01 = 1.052
 		p02 * (c01+c02 * p03+c03 / p03+c04 * sqrt(p03)+c05 * log(p03)+c06 * p04+c07 * p04^2+c08 * log(p04))
 	}
+
 	xmdl.5<-function(p02, p03, p04){
 		c03 = 0.0
 		c04 = 0.0
@@ -65,6 +70,7 @@ mdl_D_30 <- function(p01, p02, p03, p04){
 		c02 = 0.0
 		p02 * (c01+c02 * p03+c03 / p03+c04 * sqrt(p03)+c05 * log(p03)+c06 * p04+c07 * p04^2+c08 * log(p04))
 	}
+
 	xmdl.6<-function(p02, p03, p04){
 		c03 = 0.0
 		c04 = 0.0
@@ -77,6 +83,7 @@ mdl_D_30 <- function(p01, p02, p03, p04){
 		c02 = 0.0
 		p02 * (c01+c02 * p03+c03 / p03+c04 * sqrt(p03)+c05 * log(p03)+c06 * p04+c07 * p04^2+c08 * log(p04))
 	}
+
 	xmdl.7<-function(p02, p03, p04){
 		c02 = 0.002
 		c03 = 0.0
@@ -99,5 +106,5 @@ mdl_D_30 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('LV'), xmdl.6(p02, p03, p04), 
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03, p04), 
 		NA
-		))))))))
+	))))))))
 }

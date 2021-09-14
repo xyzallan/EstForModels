@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_182.R
 \name{mdl_H_182}
 \alias{mdl_H_182}
-\title{Stem H}
+\title{stand (stem), height}
 \usage{
 mdl_H_182(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height}
 
-\item{p03}{Stem A}
+\item{p03}{stand (stem), age}
 
-\item{p04}{Stem A}
+\item{p04}{stand (stem), age (random point)}
 }
 \value{
-Stem H
+stand (stem), height
 }
 \description{
-Stem H
+stand (stem), height
 }

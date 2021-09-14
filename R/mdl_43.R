@@ -1,8 +1,9 @@
-#' @title Stem D
-#' @return Stem D
-#' @param p01 Stem Spec
-#' @param p02 Stem A
+#' @title species level (stem), diameter (breast height)
+#' @return species level (stem), diameter (breast height)
+#' @param p01 species level (stem), species 
+#' @param p02 species level (stem), age 
 mdl_D_43 <- function(p01, p02){
+
 	xmdl.1<-function(p02){
 		c02 = -0.36319
 		c03 = 0.18858
@@ -12,6 +13,7 @@ mdl_D_43 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.2<-function(p02){
 		c02 = -0.47171
 		c03 = 0.089791
@@ -21,6 +23,7 @@ mdl_D_43 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.3<-function(p02){
 		c02 = -0.74499
 		c03 = 0.258
@@ -30,6 +33,7 @@ mdl_D_43 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.4<-function(p02){
 		c02 = -1.4169
 		c03 = -1.026
@@ -39,6 +43,7 @@ mdl_D_43 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.5<-function(p02){
 		c02 = -0.5408
 		c03 = 0.621
@@ -48,6 +53,7 @@ mdl_D_43 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.6<-function(p02){
 		c02 = -2.7811
 		c03 = 0.837
@@ -57,6 +63,7 @@ mdl_D_43 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.7<-function(p02){
 		c02 = -0.2943
 		c03 = -0.10104
@@ -66,6 +73,7 @@ mdl_D_43 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.8<-function(p02){
 		c02 = -0.36578
 		c03 = 0.10038
@@ -86,5 +94,5 @@ mdl_D_43 <- function(p01, p02){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02), 
 		NA
-		)))))))))
+	)))))))))
 }

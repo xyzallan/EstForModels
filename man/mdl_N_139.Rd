@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_139.R
 \name{mdl_N_139}
 \alias{mdl_N_139}
-\title{Stem N}
+\title{species level (stem), number of trees}
 \usage{
 mdl_N_139(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{species level (stem), age}
 
-\item{p03}{Stem G}
+\item{p03}{species level (stem), basal area (breast height)}
 
-\item{p04}{Stem H}
+\item{p04}{species level (stem), height (20 years old)}
 }
 \value{
-Stem N
+species level (stem), number of trees
 }
 \description{
-Stem N
+species level (stem), number of trees
 }

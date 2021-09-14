@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_186.R
 \name{mdl_F_186}
 \alias{mdl_F_186}
-\title{Stem F}
+\title{stand (stem), form}
 \usage{
 mdl_F_186(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height}
 }
 \value{
-Stem F
+stand (stem), form
 }
 \description{
-Stem F
+stand (stem), form
 }

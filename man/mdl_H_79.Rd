@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_79.R
 \name{mdl_H_79}
 \alias{mdl_H_79}
-\title{Stem H}
+\title{stand (stem), height}
 \usage{
 mdl_H_79(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{stand (stem), age (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height (100 years old)}
 }
 \value{
-Stem H
+stand (stem), height
 }
 \description{
-Stem H
+stand (stem), height
 }

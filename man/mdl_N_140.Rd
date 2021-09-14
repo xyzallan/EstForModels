@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_140.R
 \name{mdl_N_140}
 \alias{mdl_N_140}
-\title{Stem N}
+\title{species level (stem), number of trees}
 \usage{
 mdl_N_140(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{species level (stem), diameter (breast height)}
 }
 \value{
-Stem N
+species level (stem), number of trees
 }
 \description{
-Stem N
+species level (stem), number of trees
 }

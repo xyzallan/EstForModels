@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_187.R
 \name{mdl_V_187}
 \alias{mdl_V_187}
-\title{Stem V}
+\title{stand (stem), volume ()}
 \usage{
 mdl_V_187(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{stand (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height ()}
 
-\item{p04}{Stem N}
+\item{p04}{stand (stem), number of trees}
 }
 \value{
-Stem V
+stand (stem), volume ()
 }
 \description{
-Stem V
+stand (stem), volume ()
 }

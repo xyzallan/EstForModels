@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_166.R
 \name{mdl_F_166}
 \alias{mdl_F_166}
-\title{Stem F}
+\title{single tree (stem), form}
 \usage{
 mdl_F_166(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{single tree (stem), height}
 }
 \value{
-Stem F
+single tree (stem), form
 }
 \description{
-Stem F
+single tree (stem), form
 }

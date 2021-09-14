@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_8.R
 \name{mdl_D_8}
 \alias{mdl_D_8}
-\title{Bark D}
+\title{single tree (bark), diameter ()}
 \usage{
 mdl_D_8(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{single tree (stem), height}
 
-\item{p03}{Stem H}
+\item{p03}{single tree (stem), height (random point)}
 }
 \value{
-Bark D
+single tree (bark), diameter ()
 }
 \description{
-Bark D
+single tree (bark), diameter ()
 }

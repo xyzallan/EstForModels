@@ -1,10 +1,11 @@
-#' @title Stem HF
-#' @return Stem HF
-#' @param p01 Stem Spec
-#' @param p02 Stem H
-#' @param p03 Stem D
-#' @param p04 Stem D
+#' @title single tree (stem), formheight 
+#' @return single tree (stem), formheight 
+#' @param p01 single tree (stem), species 
+#' @param p02 single tree (stem), height 
+#' @param p03 single tree (stem), diameter (breast height)
+#' @param p04 single tree (stem), diameter (6 meters)
 mdl_HF_99 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c02 = -0.000733
 		c03 = 0.004635
@@ -14,6 +15,7 @@ mdl_HF_99 <- function(p01, p02, p03, p04){
 		c01 = -0.19633
 		p02 * (c01+c02 * p03+c03 * p02+c04 / p02+c05 * (p03^2+p03 * p04+p04^2) / (p03^2 * p02)+c06 * p04^2 * (p02-6) / (p03^2 * p02))
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c02 = -0.001518
 		c03 = 0.005905
@@ -23,6 +25,7 @@ mdl_HF_99 <- function(p01, p02, p03, p04){
 		c01 = -0.20078
 		p02 * (c01+c02 * p03+c03 * p02+c04 / p02+c05 * (p03^2+p03 * p04+p04^2) / (p03^2 * p02)+c06 * p04^2 * (p02-6) / (p03^2 * p02))
 	}
+
 	xmdl.3<-function(p02, p03, p04){
 		c02 = -0.001635
 		c03 = 0.006053
@@ -38,5 +41,5 @@ mdl_HF_99 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('KU'), xmdl.2(p02, p03, p04), 
 		ifelse(p01 %in% c('KS'), xmdl.3(p02, p03, p04), 
 		NA
-		))))
+	))))
 }

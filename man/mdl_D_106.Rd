@@ -2,24 +2,24 @@
 % Please edit documentation in R/mdl_106.R
 \name{mdl_D_106}
 \alias{mdl_D_106}
-\title{Stem D}
+\title{single tree (stem), diameter (breast height)}
 \usage{
 mdl_D_106(p01, p02, p03, p04, p05)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{species level (stem), age}
 
-\item{p03}{Stem D}
+\item{p03}{single tree (stem), diameter (breast height)}
 
-\item{p04}{Stem G}
+\item{p04}{species level (stem), basal area (breast height)}
 
-\item{p05}{Stem G}
+\item{p05}{stand (stem), basal area (breast height)}
 }
 \value{
-Stem D
+single tree (stem), diameter (breast height)
 }
 \description{
-Stem D
+single tree (stem), diameter (breast height)
 }

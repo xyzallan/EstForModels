@@ -1,10 +1,11 @@
-#' @title Stem D
-#' @return Stem D
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Stem H
-#' @param p04 Stem H
+#' @title single tree (stem), diameter (random point)
+#' @return single tree (stem), diameter (random point)
+#' @param p01 single tree (stem), species 
+#' @param p02 single tree (stem), diameter (breast height)
+#' @param p03 single tree (stem), height 
+#' @param p04 single tree (stem), height (random point)
 mdl_D_157 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c02 = 1.3311
 		c03 = -0.7016
@@ -16,6 +17,7 @@ mdl_D_157 <- function(p01, p02, p03, p04){
 		ipf2 = c04+c05*(1/log(p03^(1/p02)))+c06*(1/(p03/p02)^2)
 		(ipf1 * (1-(p04 / p03)^3)+ipf2 * (log(p04 / p03))) * 2
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c02 = 1.595
 		c03 = -3.155
@@ -27,6 +29,7 @@ mdl_D_157 <- function(p01, p02, p03, p04){
 		ipf2 = c04+c05*(1/log(p03^(1/p02)))+c06*(1/(p03/p02)^2)
 		(ipf1 * (1-(p04 / p03)^3)+ipf2 * (log(p04 / p03))) * 2
 	}
+
 	xmdl.16<-function(p02, p03, p04){
 		c02 = 1.4423
 		c03 = -2.1807
@@ -44,5 +47,5 @@ mdl_D_157 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('KU'), xmdl.2(p02, p03, p04), 
 		ifelse(p01 %in% c('TS'), xmdl.16(p02, p03, p04), 
 		NA
-		))))
+	))))
 }

@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_45.R
 \name{mdl_D_45}
 \alias{mdl_D_45}
-\title{Stem D}
+\title{stand (stem), diameter (breast height)}
 \usage{
 mdl_D_45(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{stand (stem), age}
 
-\item{p03}{Stem D}
+\item{p03}{stand (stem), diameter (breast height)}
 }
 \value{
-Stem D
+stand (stem), diameter (breast height)
 }
 \description{
-Stem D
+stand (stem), diameter (breast height)
 }

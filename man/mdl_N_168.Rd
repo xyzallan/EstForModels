@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_168.R
 \name{mdl_N_168}
 \alias{mdl_N_168}
-\title{Stem N}
+\title{stand (stem), number of trees ()}
 \usage{
 mdl_N_168(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem N}
+\item{p02}{stand (stem), number of trees}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height}
 
-\item{p04}{Stem H}
+\item{p04}{stand (stem), height}
 }
 \value{
-Stem N
+stand (stem), number of trees ()
 }
 \description{
-Stem N
+stand (stem), number of trees ()
 }

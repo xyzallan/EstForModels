@@ -1,15 +1,16 @@
-#' @title Stem G
-#' @return Stem G
-#' @param p01 Stem Spec
-#' @param p02 Stem G
-#' @param p03 Stem G
-#' @param p04 Stem N
-#' @param p05 Stem A
-#' @param p06 Stem H
-#' @param p07 Area Lat
-#' @param p08 Area Alt
-#' @param p09 Stem Thin
+#' @title stand (stem), basal area (breast height)
+#' @return stand (stem), basal area (breast height)
+#' @param p01 stand (stem), species 
+#' @param p02 species level (stem), basal area (breast height)
+#' @param p03 stand (stem), basal area (breast height)
+#' @param p04 stand (stem), number of trees 
+#' @param p05 stand (stem), age 
+#' @param p06 stand (stem), height (100 years old)
+#' @param p07 stand (area), latitude 
+#' @param p08 stand (area), altitude 
+#' @param p09 stand (stem), thinning exists 
 mdl_G_69 <- function(p01, p02, p03, p04, p05, p06, p07, p08, p09){
+
 	xmdl.1<-function(p02, p03, p04, p05, p06, p07, p08, p09){
 		c15 = -.00592599
 		c14 = -1.75160
@@ -28,6 +29,7 @@ mdl_G_69 <- function(p01, p02, p03, p04, p05, p06, p07, p08, p09){
 		c01 = -0.0107718
 		exp(p02 * c01+log(p02) * c02+p04 * c03+log(p04) * c04+p05 * c05+log(p05) * c06+ipf1 * c07+log(ipf1) * c08+p06 * c09+p07 * c10+p08 * c11+p09 * c12+sqrt(p02 / p04 * 4 / 3.1415926) * c14+c13)
 	}
+
 	xmdl.2<-function(p02, p03, p04, p05, p06, p07, p08, p09){
 		c15 = 0.0
 		c14 = 0.0
@@ -46,6 +48,7 @@ mdl_G_69 <- function(p01, p02, p03, p04, p05, p06, p07, p08, p09){
 		c01 = -0.0221875
 		exp(p02 * c01+log(p02) * c02+p04 * c03+log(p04) * c04+p05 * c05+log(p05) * c06+ipf1 * c07+log(ipf1) * c08+p06 * c09+p07 * c10+p08 * c11+p09 * c12+sqrt(p02 / p04 * 4 / 3.1415926) * c14+c13)
 	}
+
 	xmdl.3<-function(p02, p03, p04, p05, p06, p07, p08, p09){
 		c15 = -.00134245
 		c14 = 0.0
@@ -64,6 +67,7 @@ mdl_G_69 <- function(p01, p02, p03, p04, p05, p06, p07, p08, p09){
 		c01 = -0.0110984
 		exp(p02 * c01+log(p02) * c02+p04 * c03+log(p04) * c04+p05 * c05+log(p05) * c06+ipf1 * c07+log(ipf1) * c08+p06 * c09+p07 * c10+p08 * c11+p09 * c12+sqrt(p02 / p04 * 4 / 3.1415926) * c14+c13)
 	}
+
 	xmdl.7<-function(p02, p03, p04, p05, p06, p07, p08, p09){
 		c15 = 0.0
 		c14 = 0.0
@@ -82,6 +86,7 @@ mdl_G_69 <- function(p01, p02, p03, p04, p05, p06, p07, p08, p09){
 		c04 = 0.144495
 		exp(p02 * c01+log(p02) * c02+p04 * c03+log(p04) * c04+p05 * c05+log(p05) * c06+ipf1 * c07+log(ipf1) * c08+p06 * c09+p07 * c10+p08 * c11+p09 * c12+sqrt(p02 / p04 * 4 / 3.1415926) * c14+c13)
 	}
+
 	xmdl.19<-function(p02, p03, p04, p05, p06, p07, p08, p09){
 		c15 = 0.0
 		c14 = 0.0
@@ -108,5 +113,5 @@ mdl_G_69 <- function(p01, p02, p03, p04, p05, p06, p07, p08, p09){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03, p04, p05, p06, p07, p08, p09), 
 		ifelse(p01 %in% c('TL','PN','PP','RE','KP','JA','VA','SA','LV','LM','HB'), xmdl.19(p02, p03, p04, p05, p06, p07, p08, p09), 
 		NA
-		))))))
+	))))))
 }

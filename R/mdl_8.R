@@ -1,9 +1,10 @@
-#' @title Bark D
-#' @return Bark D
-#' @param p01 Stem Spec
-#' @param p02 Stem H
-#' @param p03 Stem H
+#' @title single tree (bark), diameter ()
+#' @return single tree (bark), diameter ()
+#' @param p01 single tree (stem), species 
+#' @param p02 single tree (stem), height 
+#' @param p03 single tree (stem), height (random point)
 mdl_D_8 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = 1.1012
 		c03 = -1.163
@@ -13,6 +14,7 @@ mdl_D_8 <- function(p01, p02, p03){
 		ipf1 = p03/p02
 		(((c01 * (ipf1)+c02) * (ipf1)+c03) * (ipf1)+c04) * (ipf1)+c05
 	}
+
 	xmdl.2<-function(p02, p03){
 		c02 = 0.1310
 		c03 = -0.2037
@@ -22,6 +24,7 @@ mdl_D_8 <- function(p01, p02, p03){
 		ipf1 = p03/p02
 		(((c01 * (ipf1)+c02) * (ipf1)+c03) * (ipf1)+c04) * (ipf1)+c05
 	}
+
 	xmdl.3<-function(p02, p03){
 		c02 = 1.3422
 		c03 = -1.175
@@ -31,6 +34,7 @@ mdl_D_8 <- function(p01, p02, p03){
 		ipf1 = p03/p02
 		(((c01 * (ipf1)+c02) * (ipf1)+c03) * (ipf1)+c04) * (ipf1)+c05
 	}
+
 	xmdl.4<-function(p02, p03){
 		c02 = 0.3707
 		c03 = -0.4335
@@ -40,6 +44,7 @@ mdl_D_8 <- function(p01, p02, p03){
 		ipf1 = p03/p02
 		(((c01 * (ipf1)+c02) * (ipf1)+c03) * (ipf1)+c04) * (ipf1)+c05
 	}
+
 	xmdl.5<-function(p02, p03){
 		c02 = 0.6245
 		c03 = -0.2045
@@ -49,6 +54,7 @@ mdl_D_8 <- function(p01, p02, p03){
 		ipf1 = p03/p02
 		(((c01 * (ipf1)+c02) * (ipf1)+c03) * (ipf1)+c04) * (ipf1)+c05
 	}
+
 	xmdl.6<-function(p02, p03){
 		c02 = 0.2197
 		c03 = -0.2569
@@ -58,6 +64,7 @@ mdl_D_8 <- function(p01, p02, p03){
 		ipf1 = p03/p02
 		(((c01 * (ipf1)+c02) * (ipf1)+c03) * (ipf1)+c04) * (ipf1)+c05
 	}
+
 	xmdl.7<-function(p02, p03){
 		c02 = 1.7896
 		c04 = 0.5323
@@ -67,6 +74,7 @@ mdl_D_8 <- function(p01, p02, p03){
 		ipf1 = p03/p02
 		(((c01 * (ipf1)+c02) * (ipf1)+c03) * (ipf1)+c04) * (ipf1)+c05
 	}
+
 	xmdl.8<-function(p02, p03){
 		c02 = 0.4070
 		c03 = -0.4760
@@ -76,6 +84,7 @@ mdl_D_8 <- function(p01, p02, p03){
 		ipf1 = p03/p02
 		(((c01 * (ipf1)+c02) * (ipf1)+c03) * (ipf1)+c04) * (ipf1)+c05
 	}
+
 	xmdl.14<-function(p02, p03){
 		c03 = -0.1961
 		c04 = -0.0089
@@ -97,5 +106,5 @@ mdl_D_8 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03), 
 		ifelse(p01 %in% c('PN'), xmdl.14(p02, p03), 
 		NA
-		))))))))))
+	))))))))))
 }

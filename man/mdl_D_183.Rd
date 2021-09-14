@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_183.R
 \name{mdl_D_183}
 \alias{mdl_D_183}
-\title{Stem D}
+\title{stand (stem), diameter (breast height)}
 \usage{
 mdl_D_183(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{stand (stem), diameter (breast height)}
 
-\item{p03}{Stem A}
+\item{p03}{stand (stem), age}
 
-\item{p04}{Stem A}
+\item{p04}{stand (stem), age (random point)}
 }
 \value{
-Stem D
+stand (stem), diameter (breast height)
 }
 \description{
-Stem D
+stand (stem), diameter (breast height)
 }

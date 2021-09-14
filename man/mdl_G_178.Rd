@@ -2,26 +2,26 @@
 % Please edit documentation in R/mdl_178.R
 \name{mdl_G_178}
 \alias{mdl_G_178}
-\title{Stem G}
+\title{stand (stem), basal area (breast height)}
 \usage{
 mdl_G_178(p01, p02, p03, p04, p05, p06)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem G}
+\item{p02}{stand (stem), basal area (breast height)}
 
-\item{p03}{Stem N}
+\item{p03}{stand (stem), number of trees}
 
-\item{p04}{Stem N}
+\item{p04}{stand (stem), number of trees}
 
-\item{p05}{Stem H}
+\item{p05}{stand (stem), height}
 
-\item{p06}{Stem H}
+\item{p06}{stand (stem), height}
 }
 \value{
-Stem G
+stand (stem), basal area (breast height)
 }
 \description{
-Stem G
+stand (stem), basal area (breast height)
 }

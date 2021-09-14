@@ -1,9 +1,10 @@
-#' @title LigSt F
-#' @return LigSt F
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Stem H
+#' @title single tree (commercial wood), form 
+#' @return single tree (commercial wood), form 
+#' @param p01 single tree (stem), species 
+#' @param p02 single tree (stem), diameter (breast height)
+#' @param p03 single tree (stem), height 
 mdl_F_162 <- function(p01, p02, p03){
+
 	xmdl.2<-function(p02, p03){
 		c02 = -27.56211
 		c03 = 1.36195
@@ -15,5 +16,5 @@ mdl_F_162 <- function(p01, p02, p03){
 	with(data.frame( p01, p02, p03 ),
 		ifelse(p01 %in% c('KU'), xmdl.2(p02, p03), 
 		NA
-		))
+	))
 }

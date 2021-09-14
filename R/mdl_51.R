@@ -1,9 +1,10 @@
-#' @title Stem H
-#' @return Stem H
-#' @param p01 Stem Spec
-#' @param p02 Stem H
-#' @param p03 Stem A
+#' @title stand (stem), height (100 years old)
+#' @return stand (stem), height (100 years old)
+#' @param p01 stand (stem), species 
+#' @param p02 stand (stem), height 
+#' @param p03 stand (stem), age 
 mdl_H_51 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = -0.37747
 		c03 = 0.40062
@@ -13,6 +14,7 @@ mdl_H_51 <- function(p01, p02, p03){
 		ipf1 = p03-c05
 		1.3+((p02-1.3-c04 / 100 * ipf1) / (1+c01 * ipf1 / 100+c02 * (ipf1^2) / 1e4+c03 * (ipf1^3) / 1e6))
 	}
+
 	xmdl.2<-function(p02, p03){
 		c02 = -0.49125
 		c03 = 0.374
@@ -22,6 +24,7 @@ mdl_H_51 <- function(p01, p02, p03){
 		ipf1 = p03-c05
 		1.3+((p02-1.3-c04 / 100 * ipf1) / (1+c01 * ipf1 / 100+c02 * (ipf1^2) / 1e4+c03 * (ipf1^3) / 1e6))
 	}
+
 	xmdl.3<-function(p02, p03){
 		c02 = -0.8942
 		c03 = 0.88715
@@ -31,6 +34,7 @@ mdl_H_51 <- function(p01, p02, p03){
 		ipf1 = p03-c05
 		1.3+((p02-1.3-c04 / 100 * ipf1) / (1+c01 * ipf1 / 100+c02 * (ipf1^2) / 1e4+c03 * (ipf1^3) / 1e6))
 	}
+
 	xmdl.4<-function(p02, p03){
 		c02 = -1.2545
 		c03 = 0.82943
@@ -40,6 +44,7 @@ mdl_H_51 <- function(p01, p02, p03){
 		ipf1 = p03-c05
 		1.3+((p02-1.3-c04 / 100 * ipf1) / (1+c01 * ipf1 / 100+c02 * (ipf1^2) / 1e4+c03 * (ipf1^3) / 1e6))
 	}
+
 	xmdl.5<-function(p02, p03){
 		c02 = -0.75888
 		c03 = 1.2127
@@ -49,6 +54,7 @@ mdl_H_51 <- function(p01, p02, p03){
 		ipf1 = p03-c05
 		1.3+((p02-1.3-c04 / 100 * ipf1) / (1+c01 * ipf1 / 100+c02 * (ipf1^2) / 1e4+c03 * (ipf1^3) / 1e6))
 	}
+
 	xmdl.6<-function(p02, p03){
 		c02 = -2.1044
 		c03 = 6.6193
@@ -58,6 +64,7 @@ mdl_H_51 <- function(p01, p02, p03){
 		ipf1 = p03-c05
 		1.3+((p02-1.3-c04 / 100 * ipf1) / (1+c01 * ipf1 / 100+c02 * (ipf1^2) / 1e4+c03 * (ipf1^3) / 1e6))
 	}
+
 	xmdl.7<-function(p02, p03){
 		c02 = -0.45015
 		c03 = 0.21242
@@ -67,6 +74,7 @@ mdl_H_51 <- function(p01, p02, p03){
 		ipf1 = p03-c05
 		1.3+((p02-1.3-c04 / 100 * ipf1) / (1+c01 * ipf1 / 100+c02 * (ipf1^2) / 1e4+c03 * (ipf1^3) / 1e6))
 	}
+
 	xmdl.8<-function(p02, p03){
 		c02 = -0.26804
 		c03 = 0.436
@@ -87,5 +95,5 @@ mdl_H_51 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03), 
 		NA
-		)))))))))
+	)))))))))
 }

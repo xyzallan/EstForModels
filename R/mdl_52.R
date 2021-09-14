@@ -1,10 +1,11 @@
-#' @title Stem H
-#' @return Stem H
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Stem D
-#' @param p04 Stem H
+#' @title single tree (stem), height 
+#' @return single tree (stem), height 
+#' @param p01 single tree (stem), species 
+#' @param p02 single tree (stem), diameter (breast height)
+#' @param p03 species level (stem), diameter (breast height)
+#' @param p04 species level (stem), height 
 mdl_H_52 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c06 = -0.0015008
 		c07 = 1.30841
@@ -18,6 +19,7 @@ mdl_H_52 <- function(p01, p02, p03, p04){
 		ipf1 = p02/p03
 		(1-c01-(c02+c03 * p02) * p02+(c04+(c05+c06 * p02) * p02) / (ipf1+1 / 2)+(c07+(c08+c09 * p02) * p02) / (ipf1+1 / 2)^2) * p04
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c03 = -0.0014605
 		c04 = -4.89742
@@ -31,6 +33,7 @@ mdl_H_52 <- function(p01, p02, p03, p04){
 		ipf1 = p02/p03
 		(1-c01-(c02+c03 * p02) * p02+(c04+(c05+c06 * p02) * p02) / (ipf1+1 / 2)+(c07+(c08+c09 * p02) * p02) / (ipf1+1 / 2)^2) * p04
 	}
+
 	xmdl.3<-function(p02, p03, p04){
 		c03 = -0.0008694
 		c04 = -3.02931
@@ -44,6 +47,7 @@ mdl_H_52 <- function(p01, p02, p03, p04){
 		ipf1 = p02/p03
 		(1-c01-(c02+c03 * p02) * p02+(c04+(c05+c06 * p02) * p02) / (ipf1+1 / 2)+(c07+(c08+c09 * p02) * p02) / (ipf1+1 / 2)^2) * p04
 	}
+
 	xmdl.4<-function(p02, p03, p04){
 		c02 = 0.026455
 		c03 = -0.0001122
@@ -57,6 +61,7 @@ mdl_H_52 <- function(p01, p02, p03, p04){
 		ipf1 = p02/p03
 		(1-c01-(c02+c03 * p02) * p02+(c04+(c05+c06 * p02) * p02) / (ipf1+1 / 2)+(c07+(c08+c09 * p02) * p02) / (ipf1+1 / 2)^2) * p04
 	}
+
 	xmdl.5<-function(p02, p03, p04){
 		c02 = 0.007542
 		c03 = 0.0003034
@@ -70,6 +75,7 @@ mdl_H_52 <- function(p01, p02, p03, p04){
 		ipf1 = p02/p03
 		(1-c01-(c02+c03 * p02) * p02+(c04+(c05+c06 * p02) * p02) / (ipf1+1 / 2)+(c07+(c08+c09 * p02) * p02) / (ipf1+1 / 2)^2) * p04
 	}
+
 	xmdl.6<-function(p02, p03, p04){
 		c02 = 0.03223
 		c03 = 0.0003922
@@ -83,6 +89,7 @@ mdl_H_52 <- function(p01, p02, p03, p04){
 		ipf1 = p02/p03
 		(1-c01-(c02+c03 * p02) * p02+(c04+(c05+c06 * p02) * p02) / (ipf1+1 / 2)+(c07+(c08+c09 * p02) * p02) / (ipf1+1 / 2)^2) * p04
 	}
+
 	xmdl.7<-function(p02, p03, p04){
 		c02 = 0.042563
 		c03 = -0.000489
@@ -107,5 +114,5 @@ mdl_H_52 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03, p04), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03, p04), 
 		NA
-		)))))))))
+	)))))))))
 }

@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_89.R
 \name{mdl_Bon_89}
 \alias{mdl_Bon_89}
-\title{Stem Bon}
+\title{stand (stem), bonitet}
 \usage{
 mdl_Bon_89(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height}
 
-\item{p03}{Stem A}
+\item{p03}{stand (stem), age}
 }
 \value{
-Stem Bon
+stand (stem), bonitet
 }
 \description{
-Stem Bon
+stand (stem), bonitet
 }

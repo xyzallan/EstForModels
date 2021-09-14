@@ -1,12 +1,13 @@
-#' @title Stem V
-#' @return Stem V
-#' @param p01 Stem Spec
-#' @param p02 Stem A
-#' @param p03 Stem A
-#' @param p04 Stem V
-#' @param p05 Area OHOR
-#' @param p06 Area Cult
+#' @title stand (stem), volume ()
+#' @return stand (stem), volume ()
+#' @param p01 stand (stem), species 
+#' @param p02 stand (stem), age 
+#' @param p03 stand (stem), age (random point)
+#' @param p04 stand (stem), volume 
+#' @param p05 stand (area), humus layer 
+#' @param p06 stand (area), cultivated 
 mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
+
 	xmdl.1<-function(p02, p03, p04, p05, p06){
 		c02 = 1.93
 		c01 = 380540
@@ -15,6 +16,7 @@ mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
 		ipf3 = sqrt((p04 - ipf2)^2 + 4 * ipf1 * p04 / p02 ^ c02)
 		(p04+ipf2+ipf3) / (2+4 * ipf1 * p03^-c02 / (p04-ipf2+ipf3))
 	}
+
 	xmdl.2<-function(p02, p03, p04, p05, p06){
 		c02 = 2.20
 		c01 = 875924
@@ -23,6 +25,7 @@ mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
 		ipf3 = sqrt((p04 - ipf2)^2 + 4 * ipf1 * p04 / p02 ^ c02)
 		(p04+ipf2+ipf3) / (2+4 * ipf1 * p03^-c02 / (p04-ipf2+ipf3))
 	}
+
 	xmdl.3<-function(p02, p03, p04, p05, p06){
 		c02 = 2.05
 		c01 = 446641
@@ -31,6 +34,7 @@ mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
 		ipf3 = sqrt((p04 - ipf2)^2 + 4 * ipf1 * p04 / p02 ^ c02)
 		(p04+ipf2+ipf3) / (2+4 * ipf1 * p03^-c02 / (p04-ipf2+ipf3))
 	}
+
 	xmdl.4<-function(p02, p03, p04, p05, p06){
 		c02 = 1.77
 		c01 = 310877
@@ -39,6 +43,7 @@ mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
 		ipf3 = sqrt((p04 - ipf2)^2 + 4 * ipf1 * p04 / p02 ^ c02)
 		(p04+ipf2+ipf3) / (2+4 * ipf1 * p03^-c02 / (p04-ipf2+ipf3))
 	}
+
 	xmdl.5<-function(p02, p03, p04, p05, p06){
 		c02 = 1.93
 		c01 = 378317
@@ -47,6 +52,7 @@ mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
 		ipf3 = sqrt((p04 - ipf2)^2 + 4 * ipf1 * p04 / p02 ^ c02)
 		(p04+ipf2+ipf3) / (2+4 * ipf1 * p03^-c02 / (p04-ipf2+ipf3))
 	}
+
 	xmdl.6<-function(p02, p03, p04, p05, p06){
 		c02 = 1.78
 		c01 = 205882
@@ -55,6 +61,7 @@ mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
 		ipf3 = sqrt((p04 - ipf2)^2 + 4 * ipf1 * p04 / p02 ^ c02)
 		(p04+ipf2+ipf3) / (2+4 * ipf1 * p03^-c02 / (p04-ipf2+ipf3))
 	}
+
 	xmdl.7<-function(p02, p03, p04, p05, p06){
 		c02 = 2.02
 		c01 = 277948
@@ -63,6 +70,7 @@ mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
 		ipf3 = sqrt((p04 - ipf2)^2 + 4 * ipf1 * p04 / p02 ^ c02)
 		(p04+ipf2+ipf3) / (2+4 * ipf1 * p03^-c02 / (p04-ipf2+ipf3))
 	}
+
 	xmdl.8<-function(p02, p03, p04, p05, p06){
 		c02 = 2.12
 		c01 = 345440
@@ -82,5 +90,5 @@ mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03, p04, p05, p06), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03, p04, p05, p06), 
 		NA
-		)))))))))
+	)))))))))
 }

@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_149.R
 \name{mdl_H_149}
 \alias{mdl_H_149}
-\title{Crwn H}
+\title{single tree (crown), height (base)}
 \usage{
 mdl_H_149(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{single tree (stem), height}
 
-\item{p03}{Stem D}
+\item{p03}{single tree (stem), diameter (breast height)}
 }
 \value{
-Crwn H
+single tree (crown), height (base)
 }
 \description{
-Crwn H
+single tree (crown), height (base)
 }

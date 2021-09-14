@@ -1,9 +1,10 @@
-#' @title Stem HF
-#' @return Stem HF
-#' @param p01 Stem Spec
-#' @param p02 Stem H
-#' @param p03 Stem D
+#' @title single tree (stem), formheight 
+#' @return single tree (stem), formheight 
+#' @param p01 single tree (stem), species 
+#' @param p02 single tree (stem), height 
+#' @param p03 single tree (stem), diameter (breast height)
 mdl_HF_154 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = 3.387
 		c03 = -0.494392
@@ -19,6 +20,7 @@ mdl_HF_154 <- function(p01, p02, p03){
 		ipf3 = c07+c08*log(p03)+c09*log(p03)^2
 		exp(ipf1+ipf2 * log(p02)+ipf3 * log(p02)^2)
 	}
+
 	xmdl.2<-function(p02, p03){
 		c02 = 1.80213
 		c03 = -0.288243
@@ -34,6 +36,7 @@ mdl_HF_154 <- function(p01, p02, p03){
 		ipf3 = c07+c08*log(p03)+c09*log(p03)^2
 		exp(ipf1+ipf2 * log(p02)+ipf3 * log(p02)^2)
 	}
+
 	xmdl.15<-function(p02, p03){
 		c02 = 4.75438
 		c03 = -0.672495
@@ -49,6 +52,7 @@ mdl_HF_154 <- function(p01, p02, p03){
 		ipf3 = c07+c08*log(p03)+c09*log(p03)^2
 		exp(ipf1+ipf2 * log(p02)+ipf3 * log(p02)^2)
 	}
+
 	xmdl.16<-function(p02, p03){
 		c02 = 6.62441
 		c03 = -0.911185
@@ -64,6 +68,7 @@ mdl_HF_154 <- function(p01, p02, p03){
 		ipf3 = c07+c08*log(p03)+c09*log(p03)^2
 		exp(ipf1+ipf2 * log(p02)+ipf3 * log(p02)^2)
 	}
+
 	xmdl.18<-function(p02, p03){
 		c02 = 3.33667
 		c03 = -0.426419
@@ -79,6 +84,7 @@ mdl_HF_154 <- function(p01, p02, p03){
 		ipf3 = c07+c08*log(p03)+c09*log(p03)^2
 		exp(ipf1+ipf2 * log(p02)+ipf3 * log(p02)^2)
 	}
+
 	xmdl.21<-function(p02, p03){
 		c02 = 0.837563
 		c03 = -0.105843
@@ -103,5 +109,5 @@ mdl_HF_154 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('NU'), xmdl.18(p02, p03), 
 		ifelse(p01 %in% c('PO'), xmdl.21(p02, p03), 
 		NA
-		)))))))
+	)))))))
 }

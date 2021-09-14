@@ -2,24 +2,24 @@
 % Please edit documentation in R/mdl_107.R
 \name{mdl_H_107}
 \alias{mdl_H_107}
-\title{Crwn H}
+\title{single tree (crown), height}
 \usage{
 mdl_H_107(p01, p02, p03, p04, p05)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem G}
+\item{p02}{stand (stem), basal area (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height (dominant)}
 
-\item{p04}{Stem D}
+\item{p04}{single tree (stem), diameter (breast height)}
 
-\item{p05}{Stem H}
+\item{p05}{single tree (stem), height}
 }
 \value{
-Crwn H
+single tree (crown), height
 }
 \description{
-Crwn H
+single tree (crown), height
 }

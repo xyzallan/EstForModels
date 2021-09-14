@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_147.R
 \name{mdl_V_147}
 \alias{mdl_V_147}
-\title{Stem V}
+\title{species level (stem), volume}
 \usage{
 mdl_V_147(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem G}
+\item{p02}{species level (stem), basal area (breast height)}
 
-\item{p03}{Stem A}
+\item{p03}{species level (stem), age}
 
-\item{p04}{Stem Bon}
+\item{p04}{species level (stem), bonitet}
 }
 \value{
-Stem V
+species level (stem), volume
 }
 \description{
-Stem V
+species level (stem), volume
 }

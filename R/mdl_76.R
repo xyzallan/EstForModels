@@ -1,9 +1,10 @@
-#' @title Stem V
-#' @return Stem V
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Stem H
+#' @title single tree (stem), volume 
+#' @return single tree (stem), volume 
+#' @param p01 single tree (stem), species 
+#' @param p02 single tree (stem), diameter (breast height)
+#' @param p03 single tree (stem), height 
 mdl_V_76 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = 2.01395
 		c03 = 2.07025
@@ -12,6 +13,7 @@ mdl_V_76 <- function(p01, p02, p03){
 		c01 = -3.32176
 		exp(c01+c02 * log(p02)+c03 * log(p03)+c04 * log(p03-1.3)+c05 * p02) / 1000
 	}
+
 	xmdl.2<-function(p02, p03){
 		c02 = 1.91505
 		c03 = 2.82541
@@ -20,6 +22,7 @@ mdl_V_76 <- function(p01, p02, p03){
 		c01 = -3.77543
 		exp(c01+c02 * log(p02)+c03 * log(p03)+c04 * log(p03-1.3)+c05 * p02) / 1000
 	}
+
 	xmdl.3<-function(p02, p03){
 		c03 = 3.98519
 		c04 = -2.659
@@ -34,5 +37,5 @@ mdl_V_76 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('KU'), xmdl.2(p02, p03), 
 		ifelse(p01 %in% c('KS'), xmdl.3(p02, p03), 
 		NA
-		))))
+	))))
 }

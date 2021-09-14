@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_138.R
 \name{mdl_H_138}
 \alias{mdl_H_138}
-\title{Stem H}
+\title{species level (stem), height}
 \usage{
 mdl_H_138(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{species level (stem), age}
 
-\item{p03}{Stem H}
+\item{p03}{species level (stem), height (20 years old)}
 }
 \value{
-Stem H
+species level (stem), height
 }
 \description{
-Stem H
+species level (stem), height
 }

@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_170.R
 \name{mdl_H_170}
 \alias{mdl_H_170}
-\title{Stem H}
+\title{stand (stem), height}
 \usage{
 mdl_H_170(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height (dominant)}
 }
 \value{
-Stem H
+stand (stem), height
 }
 \description{
-Stem H
+stand (stem), height
 }

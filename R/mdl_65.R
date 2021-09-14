@@ -1,10 +1,11 @@
-#' @title Stem V
-#' @return Stem V
-#' @param p01 Stem Spec
-#' @param p02 Stem A
-#' @param p03 Stem G
-#' @param p04 Stem H
+#' @title stand (stem), volume 
+#' @return stand (stem), volume 
+#' @param p01 stand (stem), species ()
+#' @param p02 stand (stem), age ()
+#' @param p03 stand (stem), basal area (breast height)
+#' @param p04 stand (stem), height (dominant)
 mdl_V_65 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c02 = 1.91365
 		c03 = 0.0
@@ -17,6 +18,7 @@ mdl_V_65 <- function(p01, p02, p03, p04){
 		ipf2 = log(p03*p04)
 		exp(c01+c02 * ipf1^c04-c05 * ipf2^c06)
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c02 = 0.71152
 		c03 = 5.5
@@ -29,6 +31,7 @@ mdl_V_65 <- function(p01, p02, p03, p04){
 		ipf2 = log(p03*p04)
 		exp(c01+c02 * ipf1^c04-c05 * ipf2^c06)
 	}
+
 	xmdl.3<-function(p02, p03, p04){
 		c02 = -0.60329
 		c03 = 0.0
@@ -47,5 +50,5 @@ mdl_V_65 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('KU'), xmdl.2(p02, p03, p04), 
 		ifelse(p01 %in% c('KS'), xmdl.3(p02, p03, p04), 
 		NA
-		))))
+	))))
 }

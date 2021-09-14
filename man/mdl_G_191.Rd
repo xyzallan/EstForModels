@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_191.R
 \name{mdl_G_191}
 \alias{mdl_G_191}
-\title{Stem G}
+\title{species level (stem), basal area (breast height)}
 \usage{
 mdl_G_191(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species ()}
 
-\item{p02}{Stem D}
+\item{p02}{species level (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height (100 years old)}
 
-\item{p04}{Stem G}
+\item{p04}{species level (stem), basal area (breast height)}
 }
 \value{
-Stem G
+species level (stem), basal area (breast height)
 }
 \description{
-Stem G
+species level (stem), basal area (breast height)
 }

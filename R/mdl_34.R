@@ -1,8 +1,9 @@
-#' @title Stem D
-#' @return Stem D
-#' @param p01 Stem Spec
-#' @param p02 Stem H
+#' @title stand (stem), diameter (breast height)
+#' @return stand (stem), diameter (breast height)
+#' @param p01 stand (stem), species 
+#' @param p02 stand (stem), height (100 years old)
 mdl_D_34 <- function(p01, p02){
+
 	xmdl.1<-function(p02){
 		c03 = 15.25
 		c04 = 0.0
@@ -12,6 +13,7 @@ mdl_D_34 <- function(p01, p02){
 		c05 = 1
 		max(c01,c05 * p02 * c02+c05 * p02^c06+c03-p02 * c04)
 	}
+
 	xmdl.2<-function(p02){
 		c02 = 0.0
 		c03 = -29.82
@@ -21,6 +23,7 @@ mdl_D_34 <- function(p01, p02){
 		c01 = 16
 		max(c01,c05 * p02 * c02+c05 * p02^c06+c03-p02 * c04)
 	}
+
 	xmdl.3<-function(p02){
 		c02 = 0.0
 		c03 = -3.86
@@ -30,6 +33,7 @@ mdl_D_34 <- function(p01, p02){
 		c01 = 14
 		max(c01,c05 * p02 * c02+c05 * p02^c06+c03-p02 * c04)
 	}
+
 	xmdl.4<-function(p02){
 		c02 = 0.25
 		c03 = 18.1
@@ -39,6 +43,7 @@ mdl_D_34 <- function(p01, p02){
 		c01 = 22
 		max(c01,c05 * p02 * c02+c05 * p02^c06+c03-p02 * c04)
 	}
+
 	xmdl.5<-function(p02){
 		c02 = 0.33
 		c03 = 15.5
@@ -48,6 +53,7 @@ mdl_D_34 <- function(p01, p02){
 		c01 = 18
 		max(c01,c05 * p02 * c02+c05 * p02^c06+c03-p02 * c04)
 	}
+
 	xmdl.6<-function(p02){
 		c06 = 0.0
 		c02 = 0.25
@@ -57,6 +63,7 @@ mdl_D_34 <- function(p01, p02){
 		c05 = 1
 		max(c01,c05 * p02 * c02+c05 * p02^c06+c03-p02 * c04)
 	}
+
 	xmdl.7<-function(p02){
 		c02 = 0.25
 		c03 = 23.625
@@ -76,5 +83,5 @@ mdl_D_34 <- function(p01, p02){
 		ifelse(p01 %in% c('LV'), xmdl.6(p02), 
 		ifelse(p01 %in% c('TA'), xmdl.7(p02), 
 		NA
-		))))))))
+	))))))))
 }

@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_6.R
 \name{mdl_V_6}
 \alias{mdl_V_6}
-\title{Stem V}
+\title{species level (stem), volume}
 \usage{
 mdl_V_6(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{species level (stem), height ()}
 
-\item{p03}{Stem G}
+\item{p03}{species level (stem), basal area ()}
 }
 \value{
-Stem V
+species level (stem), volume
 }
 \description{
-Stem V
+species level (stem), volume
 }

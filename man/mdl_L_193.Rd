@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_193.R
 \name{mdl_L_193}
 \alias{mdl_L_193}
-\title{Area L}
+\title{stand (area), distance between ()}
 \usage{
 mdl_L_193(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species ()}
 
-\item{p02}{Stem D}
+\item{p02}{stand (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height (100 years old)}
 }
 \value{
-Area L
+stand (area), distance between ()
 }
 \description{
-Area L
+stand (area), distance between ()
 }

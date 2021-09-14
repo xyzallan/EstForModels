@@ -2,32 +2,32 @@
 % Please edit documentation in R/mdl_74.R
 \name{mdl_G_74}
 \alias{mdl_G_74}
-\title{Stem G}
+\title{stand (stem), basal area (breast height)}
 \usage{
 mdl_G_74(p01, p02, p03, p04, p05, p06, p07, p08, p09)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem G}
+\item{p02}{species level (stem), basal area (breast height)}
 
-\item{p03}{Stem G}
+\item{p03}{stand (stem), basal area (breast height)}
 
-\item{p04}{Stem N}
+\item{p04}{stand (stem), number of trees}
 
-\item{p05}{Stem A}
+\item{p05}{stand (stem), age}
 
-\item{p06}{Stem H}
+\item{p06}{stand (stem), height (100 years old)}
 
-\item{p07}{Area Lat}
+\item{p07}{stand (area), latitude}
 
-\item{p08}{Area Alt}
+\item{p08}{stand (area), altitude}
 
-\item{p09}{Stem Thin}
+\item{p09}{stand (stem), thinning exists}
 }
 \value{
-Stem G
+stand (stem), basal area (breast height)
 }
 \description{
-Stem G
+stand (stem), basal area (breast height)
 }

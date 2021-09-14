@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_4.R
 \name{mdl_D_4}
 \alias{mdl_D_4}
-\title{Stem D}
+\title{single tree (stem), diameter (base)}
 \usage{
 mdl_D_4(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 }
 \value{
-Stem D
+single tree (stem), diameter (base)
 }
 \description{
-Stem D
+single tree (stem), diameter (base)
 }

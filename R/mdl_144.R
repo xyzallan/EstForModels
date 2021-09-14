@@ -1,10 +1,11 @@
-#' @title Stem V
-#' @return Stem V
-#' @param p01 Stem Spec
-#' @param p02 Stem A
-#' @param p03 Stem H
-#' @param p04 Stem T
+#' @title species level (stem), volume 
+#' @return species level (stem), volume 
+#' @param p01 species level (stem), species 
+#' @param p02 species level (stem), age 
+#' @param p03 stand (stem), height (100 years old)
+#' @param p04 stand (stem), density 
 mdl_V_144 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c05 = -0.3231
 		c18 = 1.801
@@ -29,6 +30,7 @@ mdl_V_144 <- function(p01, p02, p03, p04){
 		ipf3 = ((((c09*p03+c10)*p03+c11)*p03+c12)*p03+c13)/1000
 		((c01 * p03+c02) * p03+c03) * ipf2 * ipf3 * (1-exp(-ipf2 * p02))^(ipf3-1) * exp(-ipf2 * p02) * (((ipf1+1)-ipf1 * p04) * p04)
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c18 = 0.588
 		c17 = 0.24
@@ -53,6 +55,7 @@ mdl_V_144 <- function(p01, p02, p03, p04){
 		ipf3 = ((((c09*p03+c10)*p03+c11)*p03+c12)*p03+c13)/1000
 		((c01 * p03+c02) * p03+c03) * ipf2 * ipf3 * (1-exp(-ipf2 * p02))^(ipf3-1) * exp(-ipf2 * p02) * (((ipf1+1)-ipf1 * p04) * p04)
 	}
+
 	xmdl.3<-function(p02, p03, p04){
 		c18 = 1.801
 		c17 = -0.133
@@ -77,6 +80,7 @@ mdl_V_144 <- function(p01, p02, p03, p04){
 		ipf3 = ((((c09*p03+c10)*p03+c11)*p03+c12)*p03+c13)/1000
 		((c01 * p03+c02) * p03+c03) * ipf2 * ipf3 * (1-exp(-ipf2 * p02))^(ipf3-1) * exp(-ipf2 * p02) * (((ipf1+1)-ipf1 * p04) * p04)
 	}
+
 	xmdl.4<-function(p02, p03, p04){
 		c19 = 0.0
 		c18 = 1.801
@@ -102,6 +106,7 @@ mdl_V_144 <- function(p01, p02, p03, p04){
 		ipf3 = ((((c09*p03+c10)*p03+c11)*p03+c12)*p03+c13)/1000
 		((c01 * p03+c02) * p03+c03) * ipf2 * ipf3 * (1-exp(-ipf2 * p02))^(ipf3-1) * exp(-ipf2 * p02) * (((ipf1+1)-ipf1 * p04) * p04)
 	}
+
 	xmdl.6<-function(p02, p03, p04){
 		c18 = 1.801
 		c17 = -0.133
@@ -126,6 +131,7 @@ mdl_V_144 <- function(p01, p02, p03, p04){
 		ipf3 = ((((c09*p03+c10)*p03+c11)*p03+c12)*p03+c13)/1000
 		((c01 * p03+c02) * p03+c03) * ipf2 * ipf3 * (1-exp(-ipf2 * p02))^(ipf3-1) * exp(-ipf2 * p02) * (((ipf1+1)-ipf1 * p04) * p04)
 	}
+
 	xmdl.7<-function(p02, p03, p04){
 		c18 = 1.801
 		c17 = -0.133
@@ -150,6 +156,7 @@ mdl_V_144 <- function(p01, p02, p03, p04){
 		ipf3 = ((((c09*p03+c10)*p03+c11)*p03+c12)*p03+c13)/1000
 		((c01 * p03+c02) * p03+c03) * ipf2 * ipf3 * (1-exp(-ipf2 * p02))^(ipf3-1) * exp(-ipf2 * p02) * (((ipf1+1)-ipf1 * p04) * p04)
 	}
+
 	xmdl.8<-function(p02, p03, p04){
 		c18 = 1.801
 		c17 = -0.133
@@ -184,5 +191,5 @@ mdl_V_144 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03, p04), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03, p04), 
 		NA
-		))))))))
+	))))))))
 }

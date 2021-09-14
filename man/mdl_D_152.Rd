@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_152.R
 \name{mdl_D_152}
 \alias{mdl_D_152}
-\title{Crwn D}
+\title{single tree (crown), diameter}
 \usage{
 mdl_D_152(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 }
 \value{
-Crwn D
+single tree (crown), diameter
 }
 \description{
-Crwn D
+single tree (crown), diameter
 }

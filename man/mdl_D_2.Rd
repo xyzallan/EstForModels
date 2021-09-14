@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_2.R
 \name{mdl_D_2}
 \alias{mdl_D_2}
-\title{Stem D}
+\title{single tree (stem), diameter (random point)}
 \usage{
 mdl_D_2(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{single tree (stem), height}
 
-\item{p04}{Stem H}
+\item{p04}{single tree (stem), height (random point)}
 }
 \value{
-Stem D
+single tree (stem), diameter (random point)
 }
 \description{
-Stem D
+single tree (stem), diameter (random point)
 }

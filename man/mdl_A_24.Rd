@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_24.R
 \name{mdl_A_24}
 \alias{mdl_A_24}
-\title{Stem A}
+\title{single tree (stem), age (breast height)}
 \usage{
 mdl_A_24(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Area Bon}
+\item{p02}{stand (area), bonitet}
 }
 \value{
-Stem A
+single tree (stem), age (breast height)
 }
 \description{
-Stem A
+single tree (stem), age (breast height)
 }

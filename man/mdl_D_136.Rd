@@ -2,28 +2,28 @@
 % Please edit documentation in R/mdl_136.R
 \name{mdl_D_136}
 \alias{mdl_D_136}
-\title{Stem D}
+\title{single tree (stem), diameter (breast height)}
 \usage{
 mdl_D_136(p01, p02, p03, p04, p05, p06, p07)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 
-\item{p03}{Crwn H}
+\item{p03}{single tree (crown), height}
 
-\item{p04}{Stem G}
+\item{p04}{stand (stem), basal area (breast height)}
 
-\item{p05}{LarTr G}
+\item{p05}{stand (larger trees), basal area (breast height)}
 
-\item{p06}{Stem H}
+\item{p06}{stand (stem), height (dominant)}
 
-\item{p07}{Stem H}
+\item{p07}{stand (stem), height (100 years old)}
 }
 \value{
-Stem D
+single tree (stem), diameter (breast height)
 }
 \description{
-Stem D
+single tree (stem), diameter (breast height)
 }

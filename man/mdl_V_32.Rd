@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_32.R
 \name{mdl_V_32}
 \alias{mdl_V_32}
-\title{Stem V}
+\title{stand (stem), volume}
 \usage{
 mdl_V_32(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height}
 }
 \value{
-Stem V
+stand (stem), volume
 }
 \description{
-Stem V
+stand (stem), volume
 }

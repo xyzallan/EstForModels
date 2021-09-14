@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_19.R
 \name{mdl_V_19}
 \alias{mdl_V_19}
-\title{Stem V}
+\title{species level (stem), volume ()}
 \usage{
 mdl_V_19(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{species level (stem), age}
 
-\item{p03}{Stem T}
+\item{p03}{stand (stem), density}
 
-\item{p04}{Stem H}
+\item{p04}{stand (stem), height (100 years old)}
 }
 \value{
-Stem V
+species level (stem), volume ()
 }
 \description{
-Stem V
+species level (stem), volume ()
 }

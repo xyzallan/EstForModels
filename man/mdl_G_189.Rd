@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_189.R
 \name{mdl_G_189}
 \alias{mdl_G_189}
-\title{Stem G}
+\title{stand (stem), basal area (breast height)}
 \usage{
 mdl_G_189(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height}
 }
 \value{
-Stem G
+stand (stem), basal area (breast height)
 }
 \description{
-Stem G
+stand (stem), basal area (breast height)
 }

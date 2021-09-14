@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_130.R
 \name{mdl_N_130}
 \alias{mdl_N_130}
-\title{Stem N}
+\title{stand (stem), number of trees}
 \usage{
 mdl_N_130(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height}
 }
 \value{
-Stem N
+stand (stem), number of trees
 }
 \description{
-Stem N
+stand (stem), number of trees
 }

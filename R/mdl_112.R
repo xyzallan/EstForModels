@@ -1,9 +1,10 @@
-#' @title Stem G
-#' @return Stem G
-#' @param p01 Stem Spec
-#' @param p02 Stem H
-#' @param p03 Stem H
+#' @title stand (stem), basal area (breast height)
+#' @return stand (stem), basal area (breast height)
+#' @param p01 stand (stem), species 
+#' @param p02 stand (stem), height 
+#' @param p03 stand (stem), height (100 years old)
 mdl_G_112 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = 1.67
 		c03 = -0.0289
@@ -11,6 +12,7 @@ mdl_G_112 <- function(p01, p02, p03){
 		c01 = -5.18
 		c01+p02 * (c02+p02 * c03)+p03 * c04
 	}
+
 	xmdl.2<-function(p02, p03){
 		c02 = 2.48
 		c03 = -0.0446
@@ -18,6 +20,7 @@ mdl_G_112 <- function(p01, p02, p03){
 		c01 = -18.5
 		c01+p02 * (c02+p02 * c03)+p03 * c04
 	}
+
 	xmdl.3<-function(p02, p03){
 		c02 = 1.25
 		c03 = -0.0156
@@ -31,5 +34,5 @@ mdl_G_112 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('KU'), xmdl.2(p02, p03), 
 		ifelse(p01 %in% c('KS'), xmdl.3(p02, p03), 
 		NA
-		))))
+	))))
 }

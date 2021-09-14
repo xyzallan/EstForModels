@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_64.R
 \name{mdl_V_64}
 \alias{mdl_V_64}
-\title{Stem V}
+\title{stand (stem), volume}
 \usage{
 mdl_V_64(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species ()}
 
-\item{p02}{Stem A}
+\item{p02}{stand (stem), age ()}
 
-\item{p03}{Stem V}
+\item{p03}{stand (stem), volume ()}
 }
 \value{
-Stem V
+stand (stem), volume
 }
 \description{
-Stem V
+stand (stem), volume
 }

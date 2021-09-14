@@ -1,13 +1,14 @@
-#' @title Stem D
-#' @return Stem D
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Crwn H
-#' @param p04 Stem G
-#' @param p05 LarTr G
-#' @param p06 Stem H
-#' @param p07 Stem H
+#' @title single tree (stem), diameter (breast height)
+#' @return single tree (stem), diameter (breast height)
+#' @param p01 single tree (stem), species 
+#' @param p02 single tree (stem), diameter (breast height)
+#' @param p03 single tree (crown), height 
+#' @param p04 stand (stem), basal area (breast height)
+#' @param p05 stand (larger trees), basal area (breast height)
+#' @param p06 stand (stem), height (dominant)
+#' @param p07 stand (stem), height (100 years old)
 mdl_D_136 <- function(p01, p02, p03, p04, p05, p06, p07){
+
 	xmdl.1<-function(p02, p03, p04, p05, p06, p07){
 		c02 = 0.7917
 		c03 = 0.5557
@@ -23,5 +24,5 @@ mdl_D_136 <- function(p01, p02, p03, p04, p05, p06, p07){
 	with(data.frame( p01, p02, p03, p04, p05, p06, p07 ),
 		ifelse(p01 %in% c('MA'), xmdl.1(p02, p03, p04, p05, p06, p07), 
 		NA
-		))
+	))
 }

@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_120.R
 \name{mdl_G_120}
 \alias{mdl_G_120}
-\title{Stem G}
+\title{stand (stem), basal area (breast height)}
 \usage{
 mdl_G_120(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height (100 years old)}
 }
 \value{
-Stem G
+stand (stem), basal area (breast height)
 }
 \description{
-Stem G
+stand (stem), basal area (breast height)
 }

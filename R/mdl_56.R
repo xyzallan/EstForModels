@@ -1,10 +1,11 @@
-#' @title Stem N
-#' @return Stem N
-#' @param p01 Stem Spec
-#' @param p02 Stem N
-#' @param p03 Stem D
-#' @param p04 Stem D
+#' @title stand (stem), number of trees (base)
+#' @return stand (stem), number of trees (base)
+#' @param p01 stand (stem), species ()
+#' @param p02 stand (stem), number of trees (random point)
+#' @param p03 stand (stem), diameter (breast height)
+#' @param p04 stand (stem), diameter (breast height)
 mdl_N_56 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c02 = -1.54038
 		c03 = -0.6744
@@ -13,6 +14,7 @@ mdl_N_56 <- function(p01, p02, p03, p04){
 		ipf1 = p04/p03
 		p02 / exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c02 = -1.42629
 		c03 = -0.85544
@@ -21,6 +23,7 @@ mdl_N_56 <- function(p01, p02, p03, p04){
 		ipf1 = p04/p03
 		p02 / exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.3<-function(p02, p03, p04){
 		c02 = -1.79834
 		c03 = -0.53367
@@ -29,6 +32,7 @@ mdl_N_56 <- function(p01, p02, p03, p04){
 		ipf1 = p04/p03
 		p02 / exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.4<-function(p02, p03, p04){
 		c02 = -2.51157
 		c03 = 0.57348
@@ -37,6 +41,7 @@ mdl_N_56 <- function(p01, p02, p03, p04){
 		ipf1 = p04/p03
 		p02 / exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.5<-function(p02, p03, p04){
 		c04 = 2.15344
 		c01 = 2.60968
@@ -45,6 +50,7 @@ mdl_N_56 <- function(p01, p02, p03, p04){
 		ipf1 = p04/p03
 		p02 / exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.6<-function(p02, p03, p04){
 		c03 = -2.32232
 		c04 = 2.41759
@@ -53,6 +59,7 @@ mdl_N_56 <- function(p01, p02, p03, p04){
 		ipf1 = p04/p03
 		p02 / exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.7<-function(p02, p03, p04){
 		c02 = -1.4554
 		c03 = 0.0
@@ -61,6 +68,7 @@ mdl_N_56 <- function(p01, p02, p03, p04){
 		ipf1 = p04/p03
 		p02 / exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.8<-function(p02, p03, p04){
 		c02 = -2.1786
 		c03 = -0.06941
@@ -80,5 +88,5 @@ mdl_N_56 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03, p04), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03, p04), 
 		NA
-		)))))))))
+	)))))))))
 }

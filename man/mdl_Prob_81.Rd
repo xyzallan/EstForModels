@@ -2,30 +2,30 @@
 % Please edit documentation in R/mdl_81.R
 \name{mdl_Prob_81}
 \alias{mdl_Prob_81}
-\title{Stem Prob}
+\title{single tree (stem), probability}
 \usage{
 mdl_Prob_81(p01, p02, p03, p04, p05, p06, p07, p08)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height (100 years old)}
 
-\item{p04}{LarTr G}
+\item{p04}{stand (larger trees), basal area (breast height)}
 
-\item{p05}{Stem G}
+\item{p05}{stand (stem), basal area (breast height)}
 
-\item{p06}{Stem G}
+\item{p06}{species level (stem), basal area (breast height)}
 
-\item{p07}{Stem A}
+\item{p07}{single tree (stem), age}
 
-\item{p08}{Stem A}
+\item{p08}{single tree (stem), age (random point)}
 }
 \value{
-Stem Prob
+single tree (stem), probability
 }
 \description{
-Stem Prob
+single tree (stem), probability
 }

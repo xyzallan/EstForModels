@@ -2,24 +2,24 @@
 % Please edit documentation in R/mdl_111.R
 \name{mdl_A_111}
 \alias{mdl_A_111}
-\title{Stem A}
+\title{stand (stem), age (mature)}
 \usage{
 mdl_A_111(p01, p02, p03, p04, p05)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{stand (stem), age}
 
-\item{p03}{Stem N}
+\item{p03}{stand (stem), number of trees}
 
-\item{p04}{Stem D}
+\item{p04}{stand (stem), diameter (breast height)}
 
-\item{p05}{Stem H}
+\item{p05}{stand (stem), height (100 years old)}
 }
 \value{
-Stem A
+stand (stem), age (mature)
 }
 \description{
-Stem A
+stand (stem), age (mature)
 }

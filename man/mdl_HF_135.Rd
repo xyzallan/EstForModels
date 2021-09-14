@@ -2,26 +2,26 @@
 % Please edit documentation in R/mdl_135.R
 \name{mdl_HF_135}
 \alias{mdl_HF_135}
-\title{Stem HF}
+\title{single tree (stem), formheight}
 \usage{
 mdl_HF_135(p01, p02, p03, p04, p05, p06)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{single tree (stem), height}
 
-\item{p04}{Crwn H}
+\item{p04}{single tree (crown), height}
 
-\item{p05}{Stem H}
+\item{p05}{stand (stem), height (dominant)}
 
-\item{p06}{Stem G}
+\item{p06}{stand (stem), basal area (breast height)}
 }
 \value{
-Stem HF
+single tree (stem), formheight
 }
 \description{
-Stem HF
+single tree (stem), formheight
 }

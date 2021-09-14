@@ -2,28 +2,28 @@
 % Please edit documentation in R/mdl_167.R
 \name{mdl_G_167}
 \alias{mdl_G_167}
-\title{Stem G}
+\title{stand (stem), basal area (breast height)}
 \usage{
 mdl_G_167(p01, p02, p03, p04, p05, p06, p07)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem G}
+\item{p02}{stand (stem), basal area (breast height)}
 
-\item{p03}{Stem A}
+\item{p03}{stand (stem), age}
 
-\item{p04}{Stem A}
+\item{p04}{stand (stem), age (random point)}
 
-\item{p05}{Stem N}
+\item{p05}{stand (stem), number of trees}
 
-\item{p06}{Stem N}
+\item{p06}{stand (stem), number of trees}
 
-\item{p07}{Stem H}
+\item{p07}{stand (stem), height (100 years old)}
 }
 \value{
-Stem G
+stand (stem), basal area (breast height)
 }
 \description{
-Stem G
+stand (stem), basal area (breast height)
 }

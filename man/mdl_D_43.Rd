@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_43.R
 \name{mdl_D_43}
 \alias{mdl_D_43}
-\title{Stem D}
+\title{species level (stem), diameter (breast height)}
 \usage{
 mdl_D_43(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{species level (stem), age}
 }
 \value{
-Stem D
+species level (stem), diameter (breast height)
 }
 \description{
-Stem D
+species level (stem), diameter (breast height)
 }

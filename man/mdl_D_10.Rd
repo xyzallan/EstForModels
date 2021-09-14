@@ -2,24 +2,24 @@
 % Please edit documentation in R/mdl_10.R
 \name{mdl_D_10}
 \alias{mdl_D_10}
-\title{Stem D}
+\title{stand (stem), diameter (breast height)}
 \usage{
 mdl_D_10(p01, p02, p03, p04, p05)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem A}
+\item{p02}{stand (stem), age}
 
-\item{p03}{Stem A}
+\item{p03}{stand (stem), age (random point)}
 
-\item{p04}{Stem D}
+\item{p04}{stand (stem), diameter (breast height)}
 
-\item{p05}{Area OHOR}
+\item{p05}{stand (area), humus layer}
 }
 \value{
-Stem D
+stand (stem), diameter (breast height)
 }
 \description{
-Stem D
+stand (stem), diameter (breast height)
 }

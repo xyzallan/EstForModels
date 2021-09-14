@@ -1,9 +1,10 @@
-#' @title Stem H
-#' @return Stem H
-#' @param p01 Stem Spec
-#' @param p02 Stem A
-#' @param p03 Stem H
+#' @title species level (stem), height 
+#' @return species level (stem), height 
+#' @param p01 species level (stem), species 
+#' @param p02 species level (stem), age 
+#' @param p03 species level (stem), height (20 years old)
 mdl_H_138 <- function(p01, p02, p03){
+
 	xmdl.2<-function(p02, p03){
 		c02 = 0.4245
 		c03 = 5.066
@@ -16,5 +17,5 @@ mdl_H_138 <- function(p01, p02, p03){
 	with(data.frame( p01, p02, p03 ),
 		ifelse(p01 %in% c('KU'), xmdl.2(p02, p03), 
 		NA
-		))
+	))
 }

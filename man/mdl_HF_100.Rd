@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_100.R
 \name{mdl_HF_100}
 \alias{mdl_HF_100}
-\title{Stem HF}
+\title{stand (stem), formheight}
 \usage{
 mdl_HF_100(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem HF}
+\item{p02}{single tree (stem), formheight}
 
-\item{p03}{Stem H}
+\item{p03}{single tree (stem), height}
 
-\item{p04}{Stem D}
+\item{p04}{single tree (stem), diameter (breast height)}
 }
 \value{
-Stem HF
+stand (stem), formheight
 }
 \description{
-Stem HF
+stand (stem), formheight
 }

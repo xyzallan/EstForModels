@@ -1,9 +1,10 @@
-#' @title Stem N
-#' @return Stem N
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Stem D
+#' @title stand (stem), number of trees ()
+#' @return stand (stem), number of trees ()
+#' @param p01 stand (stem), species ()
+#' @param p02 stand (stem), diameter (breast height)
+#' @param p03 stand (stem), diameter (breast height)
 mdl_N_57 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = -1.54038
 		c03 = -0.6744
@@ -12,6 +13,7 @@ mdl_N_57 <- function(p01, p02, p03){
 		ipf1 = p02/p03
 		exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.2<-function(p02, p03){
 		c02 = -1.42629
 		c03 = -0.85544
@@ -20,6 +22,7 @@ mdl_N_57 <- function(p01, p02, p03){
 		ipf1 = p02/p03
 		exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.3<-function(p02, p03){
 		c02 = -1.79834
 		c03 = -0.53367
@@ -28,6 +31,7 @@ mdl_N_57 <- function(p01, p02, p03){
 		ipf1 = p02/p03
 		exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.4<-function(p02, p03){
 		c02 = -2.51157
 		c03 = 0.57348
@@ -36,6 +40,7 @@ mdl_N_57 <- function(p01, p02, p03){
 		ipf1 = p02/p03
 		exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.5<-function(p02, p03){
 		c02 = -0.13959
 		c03 = -3.23323
@@ -44,6 +49,7 @@ mdl_N_57 <- function(p01, p02, p03){
 		ipf1 = p02/p03
 		exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.6<-function(p02, p03){
 		c02 = -1.901
 		c03 = -2.32232
@@ -52,6 +58,7 @@ mdl_N_57 <- function(p01, p02, p03){
 		ipf1 = p02/p03
 		exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.7<-function(p02, p03){
 		c02 = -1.4554
 		c03 = 0.0
@@ -60,6 +67,7 @@ mdl_N_57 <- function(p01, p02, p03){
 		ipf1 = p02/p03
 		exp((1-ipf1) * (((c04 * ipf1+c03) * ipf1+c02) * ipf1+c01))
 	}
+
 	xmdl.8<-function(p02, p03){
 		c02 = -2.1786
 		c03 = -0.06941
@@ -79,5 +87,5 @@ mdl_N_57 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03), 
 		NA
-		)))))))))
+	)))))))))
 }

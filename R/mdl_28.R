@@ -1,9 +1,10 @@
-#' @title Stem H
-#' @return Stem H
-#' @param p01 Stem Spec
-#' @param p02 Stem A
-#' @param p03 Stem H
+#' @title stand (stem), height 
+#' @return stand (stem), height 
+#' @param p01 stand (stem), species 
+#' @param p02 stand (stem), age 
+#' @param p03 stand (stem), height (100 years old)
 mdl_H_28 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = 3.3841
 		c03 = 8.0296
@@ -21,5 +22,5 @@ mdl_H_28 <- function(p01, p02, p03){
 	with(data.frame( p01, p02, p03 ),
 		ifelse(p01 %in% c('TO','NU','SD','TS','LH','KP','JA','VA','SA','TA','KU','MA'), xmdl.1(p02, p03), 
 		NA
-		))
+	))
 }

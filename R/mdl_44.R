@@ -1,8 +1,9 @@
-#' @title Stem H
-#' @return Stem H
-#' @param p01 Stem Spec
-#' @param p02 Stem A
+#' @title species level (stem), height 
+#' @return species level (stem), height 
+#' @param p01 species level (stem), species 
+#' @param p02 species level (stem), age 
 mdl_H_44 <- function(p01, p02){
+
 	xmdl.1<-function(p02){
 		c02 = -0.37747
 		c03 = 0.40062
@@ -11,6 +12,7 @@ mdl_H_44 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.2<-function(p02){
 		c02 = -0.49125
 		c03 = 0.374
@@ -19,6 +21,7 @@ mdl_H_44 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.3<-function(p02){
 		c02 = -0.8942
 		c03 = 0.88715
@@ -27,6 +30,7 @@ mdl_H_44 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.4<-function(p02){
 		c02 = -1.2545
 		c03 = 0.82943
@@ -35,6 +39,7 @@ mdl_H_44 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.5<-function(p02){
 		c02 = -0.75888
 		c03 = 1.2127
@@ -43,6 +48,7 @@ mdl_H_44 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.6<-function(p02){
 		c02 = -2.1044
 		c03 = 6.6193
@@ -51,6 +57,7 @@ mdl_H_44 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.7<-function(p02){
 		c02 = -0.45015
 		c03 = 0.21242
@@ -59,6 +66,7 @@ mdl_H_44 <- function(p01, p02){
 		ipf1 = (p02-c04)/100
 		(1+((c03 * ipf1+c02) * ipf1+c01) * ipf1)
 	}
+
 	xmdl.8<-function(p02){
 		c02 = -0.26804
 		c03 = 0.436
@@ -78,5 +86,5 @@ mdl_H_44 <- function(p01, p02){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02), 
 		NA
-		)))))))))
+	)))))))))
 }

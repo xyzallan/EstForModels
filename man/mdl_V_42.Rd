@@ -2,38 +2,38 @@
 % Please edit documentation in R/mdl_42.R
 \name{mdl_V_42}
 \alias{mdl_V_42}
-\title{Stem V}
+\title{species level (stem), volume}
 \usage{
 mdl_V_42(p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem G}
+\item{p02}{species level (stem), basal area (breast height)}
 
-\item{p03}{Stem G}
+\item{p03}{stand (stem), basal area (breast height)}
 
-\item{p04}{Stem N}
+\item{p04}{species level (stem), number of trees}
 
-\item{p05}{Stem N}
+\item{p05}{stand (stem), number of trees}
 
-\item{p06}{Area Veg}
+\item{p06}{stand (area), vegetation layer exists}
 
-\item{p07}{Area Thin}
+\item{p07}{stand (area), thinning exists}
 
-\item{p08}{Stem H}
+\item{p08}{stand (stem), height (100 years old)}
 
-\item{p09}{Stem D}
+\item{p09}{species level (stem), diameter (breast height)}
 
-\item{p10}{Area Alt}
+\item{p10}{stand (area), altitude}
 
-\item{p11}{Area Lat}
+\item{p11}{stand (area), latitude}
 
-\item{p12}{Stem A}
+\item{p12}{species level (stem), age}
 }
 \value{
-Stem V
+species level (stem), volume
 }
 \description{
-Stem V
+species level (stem), volume
 }

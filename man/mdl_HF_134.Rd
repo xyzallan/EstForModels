@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_134.R
 \name{mdl_HF_134}
 \alias{mdl_HF_134}
-\title{Stem HF}
+\title{single tree (stem), formheight}
 \usage{
 mdl_HF_134(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{single tree (stem), height}
 
-\item{p03}{Stem D}
+\item{p03}{single tree (stem), diameter (breast height)}
 }
 \value{
-Stem HF
+single tree (stem), formheight
 }
 \description{
-Stem HF
+single tree (stem), formheight
 }

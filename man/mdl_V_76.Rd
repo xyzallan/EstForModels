@@ -2,20 +2,20 @@
 % Please edit documentation in R/mdl_76.R
 \name{mdl_V_76}
 \alias{mdl_V_76}
-\title{Stem V}
+\title{single tree (stem), volume}
 \usage{
 mdl_V_76(p01, p02, p03)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{single tree (stem), height}
 }
 \value{
-Stem V
+single tree (stem), volume
 }
 \description{
-Stem V
+single tree (stem), volume
 }

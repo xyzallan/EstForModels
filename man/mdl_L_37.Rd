@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_37.R
 \name{mdl_L_37}
 \alias{mdl_L_37}
-\title{Stem L}
+\title{stand (stem), distance between}
 \usage{
 mdl_L_37(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{species level (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height (100 years old)}
 
-\item{p04}{Area OHOR}
+\item{p04}{stand (area), humus layer}
 }
 \value{
-Stem L
+stand (stem), distance between
 }
 \description{
-Stem L
+stand (stem), distance between
 }

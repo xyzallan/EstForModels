@@ -1,9 +1,10 @@
-#' @title Stem Bon
-#' @return Stem Bon
-#' @param p01 Stem Spec
-#' @param p02 Stem H
-#' @param p03 Stem A
+#' @title stand (stem), bonitet 
+#' @return stand (stem), bonitet 
+#' @param p01 stand (stem), species 
+#' @param p02 stand (stem), height 
+#' @param p03 stand (stem), age 
 mdl_Bon_89 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = -20.468
 		c03 = 9.201
@@ -15,6 +16,7 @@ mdl_Bon_89 <- function(p01, p02, p03){
 		c01 = 11.81
 		(p02-(c01+c02 * log(p03)+c03 * log(p03)^2+c04 * log(p03)^3)) / (c05+c06 * log(p03)+c07 * log(p03)^2+c08 * log(p03)^3)
 	}
+
 	xmdl.2<-function(p02, p03){
 		c02 = -67.663
 		c03 = 20.228
@@ -26,6 +28,7 @@ mdl_Bon_89 <- function(p01, p02, p03){
 		c01 = 70.29
 		(p02-(c01+c02 * log(p03)+c03 * log(p03)^2+c04 * log(p03)^3)) / (c05+c06 * log(p03)+c07 * log(p03)^2+c08 * log(p03)^3)
 	}
+
 	xmdl.3<-function(p02, p03){
 		c02 = -5.019
 		c03 = 2.555
@@ -37,6 +40,7 @@ mdl_Bon_89 <- function(p01, p02, p03){
 		c01 = 4.74
 		(p02-(c01+c02 * log(p03)+c03 * log(p03)^2+c04 * log(p03)^3)) / (c05+c06 * log(p03)+c07 * log(p03)^2+c08 * log(p03)^3)
 	}
+
 	xmdl.4<-function(p02, p03){
 		c05 = -2.249
 		c06 = 1.493
@@ -48,6 +52,7 @@ mdl_Bon_89 <- function(p01, p02, p03){
 		c04 = 0.0
 		(p02-(c01+c02 * log(p03)+c03 * log(p03)^2+c04 * log(p03)^3)) / (c05+c06 * log(p03)+c07 * log(p03)^2+c08 * log(p03)^3)
 	}
+
 	xmdl.5<-function(p02, p03){
 		c02 = -14.277
 		c04 = -0.9235
@@ -59,6 +64,7 @@ mdl_Bon_89 <- function(p01, p02, p03){
 		c03 = 8.355
 		(p02-(c01+c02 * log(p03)+c03 * log(p03)^2+c04 * log(p03)^3)) / (c05+c06 * log(p03)+c07 * log(p03)^2+c08 * log(p03)^3)
 	}
+
 	xmdl.6<-function(p02, p03){
 		c02 = -18.290
 		c03 = 10.125
@@ -70,6 +76,7 @@ mdl_Bon_89 <- function(p01, p02, p03){
 		c01 = 14.48
 		(p02-(c01+c02 * log(p03)+c03 * log(p03)^2+c04 * log(p03)^3)) / (c05+c06 * log(p03)+c07 * log(p03)^2+c08 * log(p03)^3)
 	}
+
 	xmdl.7<-function(p02, p03){
 		c02 = -52.979
 		c03 = 18.293
@@ -81,6 +88,7 @@ mdl_Bon_89 <- function(p01, p02, p03){
 		c01 = 50.41
 		(p02-(c01+c02 * log(p03)+c03 * log(p03)^2+c04 * log(p03)^3)) / (c05+c06 * log(p03)+c07 * log(p03)^2+c08 * log(p03)^3)
 	}
+
 	xmdl.8<-function(p02, p03){
 		c02 = -28.644
 		c03 = 13.44
@@ -103,5 +111,5 @@ mdl_Bon_89 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03), 
 		NA
-		)))))))))
+	)))))))))
 }

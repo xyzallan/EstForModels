@@ -1,9 +1,10 @@
-#' @title Stem Price
-#' @return Stem Price
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Stem H
+#' @title species level (stem), price 
+#' @return species level (stem), price 
+#' @param p01 species level (stem), species 
+#' @param p02 species level (stem), diameter (breast height)
+#' @param p03 species level (stem), height 
 mdl_Price_12 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c14 = 0.0
 		c13 = 0.0
@@ -22,6 +23,7 @@ mdl_Price_12 <- function(p01, p02, p03){
 		ipf1 = (c07+((p02/c08)^c09-c10)*c11)*(c12+(p02-c13)*c14)
 		ipf1 * p02^2 * p03 / (((c01 * p02+c02) * p03+c03 * p02-c04) * p02+c05 * sqrt(p02)+c06)
 	}
+
 	xmdl.2<-function(p02, p03){
 		c14 = 0.0
 		c13 = 0.0
@@ -40,6 +42,7 @@ mdl_Price_12 <- function(p01, p02, p03){
 		ipf1 = (c07+((p02/c08)^c09-c10)*c11)*(c12+(p02-c13)*c14)
 		ipf1 * p02^2 * p03 / (((c01 * p02+c02) * p03+c03 * p02-c04) * p02+c05 * sqrt(p02)+c06)
 	}
+
 	xmdl.3<-function(p02, p03){
 		c14 = 0.0
 		c13 = 0.0
@@ -58,6 +61,7 @@ mdl_Price_12 <- function(p01, p02, p03){
 		ipf1 = (c07+((p02/c08)^c09-c10)*c11)*(c12+(p02-c13)*c14)
 		ipf1 * p02^2 * p03 / (((c01 * p02+c02) * p03+c03 * p02-c04) * p02+c05 * sqrt(p02)+c06)
 	}
+
 	xmdl.4<-function(p02, p03){
 		c14 = 0.0
 		c13 = 0.0
@@ -76,6 +80,7 @@ mdl_Price_12 <- function(p01, p02, p03){
 		ipf1 = (c07+((p02/c08)^c09-c10)*c11)*(c12+(p02-c13)*c14)
 		ipf1 * p02^2 * p03 / (((c01 * p02+c02) * p03+c03 * p02-c04) * p02+c05 * sqrt(p02)+c06)
 	}
+
 	xmdl.5<-function(p02, p03){
 		c14 = 0.0
 		c13 = 0.0
@@ -94,6 +99,7 @@ mdl_Price_12 <- function(p01, p02, p03){
 		ipf1 = (c07+((p02/c08)^c09-c10)*c11)*(c12+(p02-c13)*c14)
 		ipf1 * p02^2 * p03 / (((c01 * p02+c02) * p03+c03 * p02-c04) * p02+c05 * sqrt(p02)+c06)
 	}
+
 	xmdl.6<-function(p02, p03){
 		c14 = 0.0
 		c13 = 0.0
@@ -112,6 +118,7 @@ mdl_Price_12 <- function(p01, p02, p03){
 		ipf1 = (c07+((p02/c08)^c09-c10)*c11)*(c12+(p02-c13)*c14)
 		ipf1 * p02^2 * p03 / (((c01 * p02+c02) * p03+c03 * p02-c04) * p02+c05 * sqrt(p02)+c06)
 	}
+
 	xmdl.7<-function(p02, p03){
 		c14 = 0.04375
 		c13 = 20
@@ -130,6 +137,7 @@ mdl_Price_12 <- function(p01, p02, p03){
 		ipf1 = (c07+((p02/c08)^c09-c10)*c11)*(c12+(p02-c13)*c14)
 		ipf1 * p02^2 * p03 / (((c01 * p02+c02) * p03+c03 * p02-c04) * p02+c05 * sqrt(p02)+c06)
 	}
+
 	xmdl.8<-function(p02, p03){
 		c14 = 0.035
 		c13 = 16
@@ -159,5 +167,5 @@ mdl_Price_12 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03), 
 		NA
-		)))))))))
+	)))))))))
 }

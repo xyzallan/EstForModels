@@ -1,10 +1,11 @@
-#' @title Stem V
-#' @return Stem V
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Stem H
-#' @param p04 Stem N
+#' @title stand (stem), volume ()
+#' @return stand (stem), volume ()
+#' @param p01 stand (stem), species 
+#' @param p02 stand (stem), diameter (breast height)
+#' @param p03 stand (stem), height ()
+#' @param p04 stand (stem), number of trees 
 mdl_V_187 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c02 = 0.6321
 		c03 = 13.4558
@@ -12,6 +13,7 @@ mdl_V_187 <- function(p01, p02, p03, p04){
 		c01 = 0.0000785
 		c01 * p02^2 * p03 * (c02+c03 / p03^c04) * p04
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c02 = 0.6819
 		c03 = 55.1416
@@ -19,6 +21,7 @@ mdl_V_187 <- function(p01, p02, p03, p04){
 		c01 = 0.0000785
 		c01 * p02^2 * p03 * (c02+c03 / p03^c04) * p04
 	}
+
 	xmdl.3<-function(p02, p03, p04){
 		c02 = 0.5922
 		c03 = 46.7815
@@ -26,6 +29,7 @@ mdl_V_187 <- function(p01, p02, p03, p04){
 		c01 = 0.0000785
 		c01 * p02^2 * p03 * (c02+c03 / p03^c04) * p04
 	}
+
 	xmdl.4<-function(p02, p03, p04){
 		c02 = 0.5964
 		c03 = 28.1186
@@ -40,5 +44,5 @@ mdl_V_187 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('KS','PN','TA','SA','VA','VA','KP','RE','PP','TL'), xmdl.3(p02, p03, p04), 
 		ifelse(p01 %in% c('HB','LM','LV'), xmdl.4(p02, p03, p04), 
 		NA
-		)))))
+	)))))
 }

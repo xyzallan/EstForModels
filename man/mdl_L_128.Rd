@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_128.R
 \name{mdl_L_128}
 \alias{mdl_L_128}
-\title{Stem L}
+\title{stand (stem), distance between}
 \usage{
 mdl_L_128(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{stand (stem), diameter (breast height)}
 }
 \value{
-Stem L
+stand (stem), distance between
 }
 \description{
-Stem L
+stand (stem), distance between
 }

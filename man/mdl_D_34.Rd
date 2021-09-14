@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_34.R
 \name{mdl_D_34}
 \alias{mdl_D_34}
-\title{Stem D}
+\title{stand (stem), diameter (breast height)}
 \usage{
 mdl_D_34(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species}
 
-\item{p02}{Stem H}
+\item{p02}{stand (stem), height (100 years old)}
 }
 \value{
-Stem D
+stand (stem), diameter (breast height)
 }
 \description{
-Stem D
+stand (stem), diameter (breast height)
 }

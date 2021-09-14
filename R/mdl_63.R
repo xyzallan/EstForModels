@@ -1,10 +1,11 @@
-#' @title Stem V
-#' @return Stem V
-#' @param p01 Stem Spec
-#' @param p02 Stem A
-#' @param p03 Stem V
-#' @param p04 Stem H
+#' @title stand (stem), volume 
+#' @return stand (stem), volume 
+#' @param p01 stand (stem), species ()
+#' @param p02 stand (stem), age ()
+#' @param p03 stand (stem), volume ()
+#' @param p04 stand (stem), height (dominant)
 mdl_V_63 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c02 = 1.05986
 		c03 = 5.69
@@ -15,6 +16,7 @@ mdl_V_63 <- function(p01, p02, p03, p04){
 		c01 = 2.95091
 		exp(c01+c02 * ((c03+c07 * log(p02)))^c04-c05 * (log(p03 * p04))^c06)
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c02 = -1.99553
 		c03 = 0.0
@@ -25,6 +27,7 @@ mdl_V_63 <- function(p01, p02, p03, p04){
 		c01 = 9.25266
 		exp(c01+c02 * ((c03+c07 * log(p02)))^c04-c05 * (log(p03 * p04))^c06)
 	}
+
 	xmdl.3<-function(p02, p03, p04){
 		c02 = -2.50830
 		c03 = 0.0
@@ -41,5 +44,5 @@ mdl_V_63 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('KU'), xmdl.2(p02, p03, p04), 
 		ifelse(p01 %in% c('KS'), xmdl.3(p02, p03, p04), 
 		NA
-		))))
+	))))
 }

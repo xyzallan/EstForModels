@@ -2,18 +2,18 @@
 % Please edit documentation in R/mdl_213.R
 \name{mdl_BM_213}
 \alias{mdl_BM_213}
-\title{Stem BM}
+\title{single tree (stem), biomass (above ground)}
 \usage{
 mdl_BM_213(p01, p02)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{single tree (stem), species}
 
-\item{p02}{Stem D}
+\item{p02}{single tree (stem), diameter (breast height)}
 }
 \value{
-Stem BM
+single tree (stem), biomass (above ground)
 }
 \description{
-Stem BM
+single tree (stem), biomass (above ground)
 }

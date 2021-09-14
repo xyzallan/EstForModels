@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_190.R
 \name{mdl_D_190}
 \alias{mdl_D_190}
-\title{Stem D}
+\title{species level (stem), diameter (breast height)}
 \usage{
 mdl_D_190(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{species level (stem), species ()}
 
-\item{p02}{Stem D}
+\item{p02}{species level (stem), diameter (breast height)}
 
-\item{p03}{Stem H}
+\item{p03}{stand (stem), height (100 years old)}
 
-\item{p04}{Stem G}
+\item{p04}{species level (stem), basal area (breast height)}
 }
 \value{
-Stem D
+species level (stem), diameter (breast height)
 }
 \description{
-Stem D
+species level (stem), diameter (breast height)
 }

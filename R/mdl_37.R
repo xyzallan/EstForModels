@@ -1,10 +1,11 @@
-#' @title Stem L
-#' @return Stem L
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Stem H
-#' @param p04 Area OHOR
+#' @title stand (stem), distance between 
+#' @return stand (stem), distance between 
+#' @param p01 species level (stem), species 
+#' @param p02 species level (stem), diameter (breast height)
+#' @param p03 stand (stem), height (100 years old)
+#' @param p04 stand (area), humus layer 
 mdl_L_37 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c06 = 1
 		c02 = 0.24009
@@ -14,6 +15,7 @@ mdl_L_37 <- function(p01, p02, p03, p04){
 		c01 = 0.3011
 		(c01)+(c02 * p02)+(c03 * p02 * p03)+(c04 * p03)+(c05 * p02^c06 * log(p04+1))
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c04 = 0.0
 		c05 = -0.00509
@@ -23,6 +25,7 @@ mdl_L_37 <- function(p01, p02, p03, p04){
 		c03 = -0.004690
 		(c01)+(c02 * p02)+(c03 * p02 * p03)+(c04 * p03)+(c05 * p02^c06 * log(p04+1))
 	}
+
 	xmdl.3<-function(p02, p03, p04){
 		c03 = -0.00222
 		c04 = -0.0457
@@ -32,6 +35,7 @@ mdl_L_37 <- function(p01, p02, p03, p04){
 		c02 = 0.2088
 		(c01)+(c02 * p02)+(c03 * p02 * p03)+(c04 * p03)+(c05 * p02^c06 * log(p04+1))
 	}
+
 	xmdl.4<-function(p02, p03, p04){
 		c02 = 0.2799
 		c03 = -0.00448
@@ -41,6 +45,7 @@ mdl_L_37 <- function(p01, p02, p03, p04){
 		c01 = 0.8143
 		(c01)+(c02 * p02)+(c03 * p02 * p03)+(c04 * p03)+(c05 * p02^c06 * log(p04+1))
 	}
+
 	xmdl.5<-function(p02, p03, p04){
 		c02 = 0.3693
 		c03 = -0.00788
@@ -50,6 +55,7 @@ mdl_L_37 <- function(p01, p02, p03, p04){
 		c01 = 0.03152
 		(c01)+(c02 * p02)+(c03 * p02 * p03)+(c04 * p03)+(c05 * p02^c06 * log(p04+1))
 	}
+
 	xmdl.6<-function(p02, p03, p04){
 		c02 = 0.2111
 		c03 = -0.00319
@@ -59,6 +65,7 @@ mdl_L_37 <- function(p01, p02, p03, p04){
 		c01 = 0.8337
 		(c01)+(c02 * p02)+(c03 * p02 * p03)+(c04 * p03)+(c05 * p02^c06 * log(p04+1))
 	}
+
 	xmdl.7<-function(p02, p03, p04){
 		c02 = 0.3423
 		c03 = -0.00756
@@ -68,6 +75,7 @@ mdl_L_37 <- function(p01, p02, p03, p04){
 		c01 = 0.1644
 		(c01)+(c02 * p02)+(c03 * p02 * p03)+(c04 * p03)+(c05 * p02^c06 * log(p04+1))
 	}
+
 	xmdl.8<-function(p02, p03, p04){
 		c02 = 0.3322
 		c03 = -0.00623
@@ -88,5 +96,5 @@ mdl_L_37 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03, p04), 
 		ifelse(p01 %in% c('SA'), xmdl.8(p02, p03, p04), 
 		NA
-		)))))))))
+	)))))))))
 }

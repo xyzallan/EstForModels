@@ -1,9 +1,10 @@
-#' @title Stem G
-#' @return Stem G
-#' @param p01 Stem Spec
-#' @param p02 Stem A
-#' @param p03 Stem H
+#' @title species level (stem), basal area (breast height)
+#' @return species level (stem), basal area (breast height)
+#' @param p01 species level (stem), species 
+#' @param p02 species level (stem), age 
+#' @param p03 stand (stem), height (100 years old)
 mdl_G_36 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c12 = 0.05
 		c11 = -2.78
@@ -19,6 +20,7 @@ mdl_G_36 <- function(p01, p02, p03){
 		c01 = -9.02
 		(c01)+(c02 * p03 * p02^c03)+(c04 * p02^c05)+(c06 * log(log(p02)))+(c07 * p02^c08)+(c09 * p03)+(c10 * log(log(p02)) * sqrt(p03))+(c11 * sqrt(p03) * p02^c12)
 	}
+
 	xmdl.2<-function(p02, p03){
 		c12 = 0.0
 		c11 = 0.0
@@ -34,6 +36,7 @@ mdl_G_36 <- function(p01, p02, p03){
 		c01 = 103.9
 		(c01)+(c02 * p03 * p02^c03)+(c04 * p02^c05)+(c06 * log(log(p02)))+(c07 * p02^c08)+(c09 * p03)+(c10 * log(log(p02)) * sqrt(p03))+(c11 * sqrt(p03) * p02^c12)
 	}
+
 	xmdl.3<-function(p02, p03){
 		c12 = 0.0
 		c11 = 0.0
@@ -49,6 +52,7 @@ mdl_G_36 <- function(p01, p02, p03){
 		c01 = -1.06
 		(c01)+(c02 * p03 * p02^c03)+(c04 * p02^c05)+(c06 * log(log(p02)))+(c07 * p02^c08)+(c09 * p03)+(c10 * log(log(p02)) * sqrt(p03))+(c11 * sqrt(p03) * p02^c12)
 	}
+
 	xmdl.4<-function(p02, p03){
 		c12 = 0.0
 		c11 = 0.0
@@ -64,6 +68,7 @@ mdl_G_36 <- function(p01, p02, p03){
 		c01 = -12.1
 		(c01)+(c02 * p03 * p02^c03)+(c04 * p02^c05)+(c06 * log(log(p02)))+(c07 * p02^c08)+(c09 * p03)+(c10 * log(log(p02)) * sqrt(p03))+(c11 * sqrt(p03) * p02^c12)
 	}
+
 	xmdl.7<-function(p02, p03){
 		c02 = 0.004047
 		c03 = 0.5
@@ -84,5 +89,5 @@ mdl_G_36 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('HB'), xmdl.4(p02, p03), 
 		ifelse(p01 %in% c('TA'), xmdl.7(p02, p03), 
 		NA
-		))))))
+	))))))
 }

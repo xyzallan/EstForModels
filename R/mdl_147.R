@@ -1,10 +1,11 @@
-#' @title Stem V
-#' @return Stem V
-#' @param p01 Stem Spec
-#' @param p02 Stem G
-#' @param p03 Stem A
-#' @param p04 Stem Bon
+#' @title species level (stem), volume 
+#' @return species level (stem), volume 
+#' @param p01 species level (stem), species 
+#' @param p02 species level (stem), basal area (breast height)
+#' @param p03 species level (stem), age 
+#' @param p04 species level (stem), bonitet 
 mdl_V_147 <- function(p01, p02, p03, p04){
+
 	xmdl.1<-function(p02, p03, p04){
 		c10 = 0.00183810
 		c02 = -1.130
@@ -18,6 +19,7 @@ mdl_V_147 <- function(p01, p02, p03, p04){
 		c01 = 9.7180
 		exp(log(c01+c02 * p04)+c03 * exp(c04 * p04) * log(p03 / 10)+(p03 / 10) / (c05+c06 * p04)+((c10 * p03+c09) * log(p02 / 10)+c08 * p03+c07) * log(p02 / 10))
 	}
+
 	xmdl.2<-function(p02, p03, p04){
 		c10 = 0.00042843
 		c02 = -2.4186
@@ -36,5 +38,5 @@ mdl_V_147 <- function(p01, p02, p03, p04){
 		ifelse(p01 %in% c('MA'), xmdl.1(p02, p03, p04), 
 		ifelse(p01 %in% c('KU'), xmdl.2(p02, p03, p04), 
 		NA
-		)))
+	)))
 }

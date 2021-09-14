@@ -1,9 +1,10 @@
-#' @title Stem T
-#' @return Stem T
-#' @param p01 Stem Spec
-#' @param p02 Stem H
-#' @param p03 Stem A
+#' @title stand (stem), density 
+#' @return stand (stem), density 
+#' @param p01 stand (stem), species 
+#' @param p02 stand (stem), height (100 years old)
+#' @param p03 stand (stem), age 
 mdl_T_146 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = -0.0001
 		c03 = 0.0013
@@ -12,6 +13,7 @@ mdl_T_146 <- function(p01, p02, p03){
 		c01 = 0.0156
 		((c01+c02 * p03) * p02+c03 * p03)+(p03 / (c04 * p03+c05))^2
 	}
+
 	xmdl.2<-function(p02, p03){
 		c02 = -0.0002
 		c03 = 0.0020
@@ -20,6 +22,7 @@ mdl_T_146 <- function(p01, p02, p03){
 		c01 = 0.0153
 		((c01+c02 * p03) * p02+c03 * p03)+(p03 / (c04 * p03+c05))^2
 	}
+
 	xmdl.3<-function(p02, p03){
 		c02 = 0.0001
 		c03 = -0.0015
@@ -28,6 +31,7 @@ mdl_T_146 <- function(p01, p02, p03){
 		c01 = -0.0024
 		((c01+c02 * p03) * p02+c03 * p03)+(p03 / (c04 * p03+c05))^2
 	}
+
 	xmdl.4<-function(p02, p03){
 		c02 = 0.0000
 		c03 = -0.0005
@@ -36,6 +40,7 @@ mdl_T_146 <- function(p01, p02, p03){
 		c01 = 0.0012
 		((c01+c02 * p03) * p02+c03 * p03)+(p03 / (c04 * p03+c05))^2
 	}
+
 	xmdl.7<-function(p02, p03){
 		c02 = -0.0001
 		c03 = 0.0017
@@ -52,5 +57,5 @@ mdl_T_146 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('LM','HB'), xmdl.4(p02, p03), 
 		ifelse(p01 %in% c('SA','TA'), xmdl.7(p02, p03), 
 		NA
-		))))))
+	))))))
 }

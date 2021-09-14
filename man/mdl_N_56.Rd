@@ -2,22 +2,22 @@
 % Please edit documentation in R/mdl_56.R
 \name{mdl_N_56}
 \alias{mdl_N_56}
-\title{Stem N}
+\title{stand (stem), number of trees (base)}
 \usage{
 mdl_N_56(p01, p02, p03, p04)
 }
 \arguments{
-\item{p01}{Stem Spec}
+\item{p01}{stand (stem), species ()}
 
-\item{p02}{Stem N}
+\item{p02}{stand (stem), number of trees (random point)}
 
-\item{p03}{Stem D}
+\item{p03}{stand (stem), diameter (breast height)}
 
-\item{p04}{Stem D}
+\item{p04}{stand (stem), diameter (breast height)}
 }
 \value{
-Stem N
+stand (stem), number of trees (base)
 }
 \description{
-Stem N
+stand (stem), number of trees (base)
 }

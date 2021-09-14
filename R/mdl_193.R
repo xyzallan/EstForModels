@@ -1,9 +1,10 @@
-#' @title Area L
-#' @return Area L
-#' @param p01 Stem Spec
-#' @param p02 Stem D
-#' @param p03 Stem H
+#' @title stand (area), distance between ()
+#' @return stand (area), distance between ()
+#' @param p01 stand (stem), species ()
+#' @param p02 stand (stem), diameter (breast height)
+#' @param p03 stand (stem), height (100 years old)
 mdl_L_193 <- function(p01, p02, p03){
+
 	xmdl.1<-function(p02, p03){
 		c02 = 0.1834
 		c03 = -0.00216
@@ -11,6 +12,7 @@ mdl_L_193 <- function(p01, p02, p03){
 		c01 = -0.00437
 		c01+c02 * p02+c03 * (p02 * p03)+c04 * p03
 	}
+
 	xmdl.2<-function(p02, p03){
 		c02 = 0.1556
 		c03 = -0.00181
@@ -18,6 +20,7 @@ mdl_L_193 <- function(p01, p02, p03){
 		c01 = 0.1807
 		c01+c02 * p02+c03 * (p02 * p03)+c04 * p03
 	}
+
 	xmdl.3<-function(p02, p03){
 		c02 = 0.1822
 		c03 = -0.00151
@@ -25,6 +28,7 @@ mdl_L_193 <- function(p01, p02, p03){
 		c01 = 0.4083
 		c01+c02 * p02+c03 * (p02 * p03)+c04 * p03
 	}
+
 	xmdl.4<-function(p02, p03){
 		c02 = 0.1991
 		c03 = -0.00277
@@ -32,6 +36,7 @@ mdl_L_193 <- function(p01, p02, p03){
 		c01 = 0.02032
 		c01+c02 * p02+c03 * (p02 * p03)+c04 * p03
 	}
+
 	xmdl.6<-function(p02, p03){
 		c02 = 0.1878
 		c03 = -0.00277
@@ -47,5 +52,5 @@ mdl_L_193 <- function(p01, p02, p03){
 		ifelse(p01 %in% c('HB'), xmdl.4(p02, p03), 
 		ifelse(p01 %in% c('LV','LM','RE'), xmdl.6(p02, p03), 
 		NA
-		))))))
+	))))))
 }
