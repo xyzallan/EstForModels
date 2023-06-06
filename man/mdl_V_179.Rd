@@ -4,7 +4,7 @@
 \alias{mdl_V_179}
 \title{stand (stem), volume}
 \usage{
-mdl_V_179(p01, p02, p03)
+mdl_V_179(p01, p02, p03, p04)
 }
 \arguments{
 \item{p01}{stand (stem), species}
@@ -12,6 +12,8 @@ mdl_V_179(p01, p02, p03)
 \item{p02}{stand (stem), age}
 
 \item{p03}{stand (stem), bonitet}
+
+\item{p04}{stand (stem), density}
 }
 \value{
 stand (stem), volume
