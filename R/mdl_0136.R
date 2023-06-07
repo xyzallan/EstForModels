@@ -7,6 +7,8 @@
 #' @param p05 stand (larger trees), basal area (breast height)
 #' @param p06 stand (stem), height (dominant)
 #' @param p07 stand (stem), height (100 years old)
+#' @export
+#' @rdname mdl_D_136
 mdl_D_136 <- function(p01, p02, p03, p04, p05, p06, p07){
 
 	xmdl.1<-function(p02, p03, p04, p05, p06, p07){

@@ -4,6 +4,8 @@
 #' @param p02 species level (stem), diameter (breast height)
 #' @param p03 stand (stem), height (100 years old)
 #' @param p04 stand (area), humus layer 
+#' @export
+#' @rdname mdl_L_37
 mdl_L_37 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

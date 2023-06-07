@@ -3,6 +3,8 @@
 #' @param p01 species level (stem), species 
 #' @param p02 species level (stem), height 
 #' @param p03 species level (stem), basal area (breast height)
+#' @export
+#' @rdname mdl_V_21
 mdl_V_21 <- function(p01, p02, p03){
 
 	xmdl.1<-function(p02, p03){

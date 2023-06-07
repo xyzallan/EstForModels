@@ -2,6 +2,8 @@
 #' @return single tree (bark), volume 
 #' @param p01 single tree (bark), species 
 #' @param p02 single tree (stem), diameter (breast height)
+#' @export
+#' @rdname mdl_V_172
 mdl_V_172 <- function(p01, p02){
 
 	xmdl.1<-function(p02){

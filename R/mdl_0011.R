@@ -6,6 +6,8 @@
 #' @param p04 stand (stem), volume 
 #' @param p05 stand (area), humus layer 
 #' @param p06 stand (area), cultivated 
+#' @export
+#' @rdname mdl_V_11
 mdl_V_11 <- function(p01, p02, p03, p04, p05, p06){
 
 	xmdl.1<-function(p02, p03, p04, p05, p06){

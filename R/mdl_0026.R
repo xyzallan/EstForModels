@@ -2,6 +2,8 @@
 #' @return species level (stem), basal area (breast height)
 #' @param p01 species level (stem), species 
 #' @param p02 species level (stem), height 
+#' @export
+#' @rdname mdl_G_26
 mdl_G_26 <- function(p01, p02){
 
 	xmdl.1<-function(p02){

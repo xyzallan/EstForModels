@@ -2,6 +2,8 @@
 #' @return stand (stem), height 
 #' @param p01 stand (stem), species 
 #' @param p02 stand (stem), height (dominant)
+#' @export
+#' @rdname mdl_H_170
 mdl_H_170 <- function(p01, p02){
 
 	xmdl.2<-function(p02){

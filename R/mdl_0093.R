@@ -3,6 +3,8 @@
 #' @param p01 stand (stem), species 
 #' @param p02 stand (stem), age (breast height)
 #' @param p03 stand (stem), basal area (breast height)
+#' @export
+#' @rdname mdl_G_93
 mdl_G_93 <- function(p01, p02, p03){
 
 	xmdl.1<-function(p02, p03){

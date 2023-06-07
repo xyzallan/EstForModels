@@ -2,6 +2,8 @@
 #' @return stand (stem), distance between 
 #' @param p01 stand (stem), species 
 #' @param p02 stand (stem), diameter (breast height)
+#' @export
+#' @rdname mdl_L_127
 mdl_L_127 <- function(p01, p02){
 
 	xmdl.1<-function(p02){

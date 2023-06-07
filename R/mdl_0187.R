@@ -4,6 +4,8 @@
 #' @param p02 stand (stem), diameter (breast height)
 #' @param p03 stand (stem), height ()
 #' @param p04 stand (stem), number of trees 
+#' @export
+#' @rdname mdl_V_187
 mdl_V_187 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

@@ -2,6 +2,8 @@
 #' @return single tree (stem), biomass (above ground)
 #' @param p01 single tree (stem), species 
 #' @param p02 single tree (stem), diameter (breast height)
+#' @export
+#' @rdname mdl_BM_213
 mdl_BM_213 <- function(p01, p02){
 
 	xmdl.3<-function(p02){

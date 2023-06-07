@@ -5,6 +5,8 @@
 #' @param p03 single tree (stem), diameter (breast height)
 #' @param p04 species level (stem), basal area (breast height)
 #' @param p05 stand (stem), basal area (breast height)
+#' @export
+#' @rdname mdl_D_106
 mdl_D_106 <- function(p01, p02, p03, p04, p05){
 
 	xmdl.2<-function(p02, p03, p04, p05){

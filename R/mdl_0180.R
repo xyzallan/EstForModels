@@ -4,6 +4,8 @@
 #' @param p02 stand (stem), age 
 #' @param p03 stand (stem), height 
 #' @param p04 stand (stem), age (random point)
+#' @export
+#' @rdname mdl_H_180
 mdl_H_180 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

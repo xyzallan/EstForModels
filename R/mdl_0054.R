@@ -4,6 +4,8 @@
 #' @param p02 stand (stem), diameter 
 #' @param p03 stand (stem), diameter (base)
 #' @param p04 stand (stem), number of trees (base)
+#' @export
+#' @rdname mdl_N_54
 mdl_N_54 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

@@ -2,6 +2,8 @@
 #' @return species level (stem), diameter (breast height)
 #' @param p01 species level (stem), species 
 #' @param p02 species level (stem), age 
+#' @export
+#' @rdname mdl_D_43
 mdl_D_43 <- function(p01, p02){
 
 	xmdl.1<-function(p02){

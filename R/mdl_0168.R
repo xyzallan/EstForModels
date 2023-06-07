@@ -4,6 +4,8 @@
 #' @param p02 stand (stem), number of trees 
 #' @param p03 stand (stem), height 
 #' @param p04 stand (stem), height 
+#' @export
+#' @rdname mdl_N_168
 mdl_N_168 <- function(p01, p02, p03, p04){
 
 	xmdl.2<-function(p02, p03, p04){

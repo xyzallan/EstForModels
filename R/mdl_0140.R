@@ -2,6 +2,8 @@
 #' @return species level (stem), number of trees 
 #' @param p01 species level (stem), species 
 #' @param p02 species level (stem), diameter (breast height)
+#' @export
+#' @rdname mdl_N_140
 mdl_N_140 <- function(p01, p02){
 
 	xmdl.2<-function(p02){

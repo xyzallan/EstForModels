@@ -7,6 +7,8 @@
 #' @param p05 stand (stem), number of trees 
 #' @param p06 stand (stem), number of trees 
 #' @param p07 stand (stem), height (100 years old)
+#' @export
+#' @rdname mdl_G_167
 mdl_G_167 <- function(p01, p02, p03, p04, p05, p06, p07){
 
 	xmdl.2<-function(p02, p03, p04, p05, p06, p07){

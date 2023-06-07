@@ -4,6 +4,8 @@
 #' @param p02 single tree (stem), diameter (breast height)
 #' @param p03 single tree (stem), diameter (6 meters)
 #' @param p04 single tree (stem), height 
+#' @export
+#' @rdname mdl_V_78
 mdl_V_78 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

@@ -5,6 +5,8 @@
 #' @param p03 stand (stem), age (random point)
 #' @param p04 stand (stem), diameter (breast height)
 #' @param p05 stand (area), humus layer 
+#' @export
+#' @rdname mdl_D_10
 mdl_D_10 <- function(p01, p02, p03, p04, p05){
 
 	xmdl.1<-function(p02, p03, p04, p05){

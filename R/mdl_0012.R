@@ -3,6 +3,8 @@
 #' @param p01 species level (stem), species 
 #' @param p02 species level (stem), diameter (breast height)
 #' @param p03 species level (stem), height 
+#' @export
+#' @rdname mdl_Price_12
 mdl_Price_12 <- function(p01, p02, p03){
 
 	xmdl.1<-function(p02, p03){

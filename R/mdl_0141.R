@@ -3,6 +3,8 @@
 #' @param p01 species level (stem), species 
 #' @param p02 species level (stem), age 
 #' @param p03 species level (stem), height (20 years old)
+#' @export
+#' @rdname mdl_G_141
 mdl_G_141 <- function(p01, p02, p03){
 
 	xmdl.2<-function(p02, p03){

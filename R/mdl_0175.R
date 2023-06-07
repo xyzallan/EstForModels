@@ -3,6 +3,8 @@
 #' @param p01 single tree (stem), species 
 #' @param p02 single tree (stem), diameter (breast height)
 #' @param p03 single tree (stem), height ()
+#' @export
+#' @rdname mdl_V_175
 mdl_V_175 <- function(p01, p02, p03){
 
 	xmdl.5<-function(p02, p03){

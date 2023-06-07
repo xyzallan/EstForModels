@@ -12,6 +12,8 @@
 #' @param p10 stand (area), altitude 
 #' @param p11 stand (area), latitude 
 #' @param p12 species level (stem), age 
+#' @export
+#' @rdname mdl_V_42
 mdl_V_42 <- function(p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12){
 
 	xmdl.1<-function(p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12){

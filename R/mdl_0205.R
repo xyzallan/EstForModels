@@ -4,6 +4,8 @@
 #' @param p02 species level (stem), height 
 #' @param p03 species level (stem), diameter (breast height)
 #' @param p04 single tree (stem), diameter (breast height)
+#' @export
+#' @rdname mdl_H_205
 mdl_H_205 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

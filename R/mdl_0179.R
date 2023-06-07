@@ -4,6 +4,8 @@
 #' @param p02 stand (stem), age 
 #' @param p03 stand (stem), bonitet 
 #' @param p04 stand (stem), density 
+#' @export
+#' @rdname mdl_V_179
 mdl_V_179 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

@@ -5,6 +5,8 @@
 #' @param p03 stand (stem), number of trees 
 #' @param p04 stand (stem), diameter (breast height)
 #' @param p05 stand (stem), height (100 years old)
+#' @export
+#' @rdname mdl_A_111
 mdl_A_111 <- function(p01, p02, p03, p04, p05){
 
 	xmdl.1<-function(p02, p03, p04, p05){

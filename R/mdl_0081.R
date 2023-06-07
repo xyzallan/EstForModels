@@ -8,6 +8,8 @@
 #' @param p06 species level (stem), basal area (breast height)
 #' @param p07 single tree (stem), age 
 #' @param p08 single tree (stem), age (random point)
+#' @export
+#' @rdname mdl_Prob_81
 mdl_Prob_81 <- function(p01, p02, p03, p04, p05, p06, p07, p08){
 
 	xmdl.1<-function(p02, p03, p04, p05, p06, p07, p08){

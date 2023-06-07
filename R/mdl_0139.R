@@ -4,6 +4,8 @@
 #' @param p02 species level (stem), age 
 #' @param p03 species level (stem), basal area (breast height)
 #' @param p04 species level (stem), height (20 years old)
+#' @export
+#' @rdname mdl_N_139
 mdl_N_139 <- function(p01, p02, p03, p04){
 
 	xmdl.2<-function(p02, p03, p04){

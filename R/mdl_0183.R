@@ -4,6 +4,8 @@
 #' @param p02 stand (stem), diameter (breast height)
 #' @param p03 stand (stem), age 
 #' @param p04 stand (stem), age (random point)
+#' @export
+#' @rdname mdl_D_183
 mdl_D_183 <- function(p01, p02, p03, p04){
 
 	xmdl.15<-function(p02, p03, p04){

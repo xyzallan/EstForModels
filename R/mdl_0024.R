@@ -2,6 +2,8 @@
 #' @return single tree (stem), age (breast height)
 #' @param p01 single tree (stem), species 
 #' @param p02 stand (area), bonitet 
+#' @export
+#' @rdname mdl_A_24
 mdl_A_24 <- function(p01, p02){
 
 	xmdl.1<-function(p02){

@@ -4,6 +4,8 @@
 #' @param p02 stand (stem), age ()
 #' @param p03 stand (stem), volume ()
 #' @param p04 stand (stem), height (dominant)
+#' @export
+#' @rdname mdl_V_63
 mdl_V_63 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

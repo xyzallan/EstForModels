@@ -4,6 +4,8 @@
 #' @param p02 species level (stem), basal area (breast height)
 #' @param p03 species level (stem), age 
 #' @param p04 species level (stem), bonitet 
+#' @export
+#' @rdname mdl_V_147
 mdl_V_147 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

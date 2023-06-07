@@ -6,6 +6,8 @@
 #' @param p04 single tree (crown), height 
 #' @param p05 stand (stem), height (dominant)
 #' @param p06 stand (stem), basal area (breast height)
+#' @export
+#' @rdname mdl_HF_135
 mdl_HF_135 <- function(p01, p02, p03, p04, p05, p06){
 
 	xmdl.1<-function(p02, p03, p04, p05, p06){

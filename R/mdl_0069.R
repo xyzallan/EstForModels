@@ -9,6 +9,8 @@
 #' @param p07 stand (area), latitude 
 #' @param p08 stand (area), altitude 
 #' @param p09 stand (stem), thinning exists 
+#' @export
+#' @rdname mdl_G_69
 mdl_G_69 <- function(p01, p02, p03, p04, p05, p06, p07, p08, p09){
 
 	xmdl.1<-function(p02, p03, p04, p05, p06, p07, p08, p09){

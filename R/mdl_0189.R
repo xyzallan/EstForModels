@@ -2,6 +2,8 @@
 #' @return stand (stem), basal area (breast height)
 #' @param p01 stand (stem), species 
 #' @param p02 stand (stem), height 
+#' @export
+#' @rdname mdl_G_189
 mdl_G_189 <- function(p01, p02){
 
 	xmdl.1<-function(p02){

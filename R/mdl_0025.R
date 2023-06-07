@@ -2,6 +2,8 @@
 #' @return species level (stem), volume 
 #' @param p01 species level (stem), species 
 #' @param p02 species level (stem), height 
+#' @export
+#' @rdname mdl_V_25
 mdl_V_25 <- function(p01, p02){
 
 	xmdl.1<-function(p02){

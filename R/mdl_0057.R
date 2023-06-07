@@ -3,6 +3,8 @@
 #' @param p01 stand (stem), species ()
 #' @param p02 stand (stem), diameter (breast height)
 #' @param p03 stand (stem), diameter (breast height)
+#' @export
+#' @rdname mdl_N_57
 mdl_N_57 <- function(p01, p02, p03){
 
 	xmdl.1<-function(p02, p03){

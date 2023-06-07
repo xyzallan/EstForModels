@@ -4,6 +4,8 @@
 #' @param p02 stand (stem), volume ()
 #' @param p03 stand (stem), age ()
 #' @param p04 stand (stem), age (random point)
+#' @export
+#' @rdname mdl_V_184
 mdl_V_184 <- function(p01, p02, p03, p04){
 
 	xmdl.15<-function(p02, p03, p04){

@@ -2,6 +2,8 @@
 #' @return single tree (crown), diameter 
 #' @param p01 single tree (stem), species 
 #' @param p02 single tree (stem), diameter (breast height)
+#' @export
+#' @rdname mdl_D_152
 mdl_D_152 <- function(p01, p02){
 
 	xmdl.2<-function(p02){

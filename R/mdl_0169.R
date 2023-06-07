@@ -2,6 +2,8 @@
 #' @return stand (stem), formheight 
 #' @param p01 stand (stem), species 
 #' @param p02 stand (stem), height 
+#' @export
+#' @rdname mdl_HF_169
 mdl_HF_169 <- function(p01, p02){
 
 	xmdl.2<-function(p02){

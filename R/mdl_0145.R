@@ -3,6 +3,8 @@
 #' @param p01 stand (stem), species 
 #' @param p02 stand (stem), age 
 #' @param p03 stand (stem), height 
+#' @export
+#' @rdname mdl_G_145
 mdl_G_145 <- function(p01, p02, p03){
 
 	xmdl.1<-function(p02, p03){

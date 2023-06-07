@@ -3,6 +3,8 @@
 #' @param p01 single tree (stem), species 
 #' @param p02 single tree (stem), height 
 #' @param p03 single tree (stem), diameter (breast height)
+#' @export
+#' @rdname mdl_H_149
 mdl_H_149 <- function(p01, p02, p03){
 
 	xmdl.2<-function(p02, p03){

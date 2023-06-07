@@ -4,6 +4,8 @@
 #' @param p02 species level (stem), age 
 #' @param p03 species level (stem), height 
 #' @param p04 species level (stem), age (random point)
+#' @export
+#' @rdname mdl_H_7
 mdl_H_7 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

@@ -4,6 +4,8 @@
 #' @param p02 species level (stem), age 
 #' @param p03 stand (stem), density 
 #' @param p04 stand (stem), height (100 years old)
+#' @export
+#' @rdname mdl_V_17
 mdl_V_17 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

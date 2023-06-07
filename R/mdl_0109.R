@@ -2,6 +2,8 @@
 #' @return stand (stem), age (mature)
 #' @param p01 stand (stem), species 
 #' @param p02 stand (stem), height (100 years old)
+#' @export
+#' @rdname mdl_A_109
 mdl_A_109 <- function(p01, p02){
 
 	xmdl.1<-function(p02){

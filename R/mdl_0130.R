@@ -2,6 +2,8 @@
 #' @return stand (stem), number of trees 
 #' @param p01 stand (stem), species 
 #' @param p02 stand (stem), height 
+#' @export
+#' @rdname mdl_N_130
 mdl_N_130 <- function(p01, p02){
 
 	xmdl.1<-function(p02){

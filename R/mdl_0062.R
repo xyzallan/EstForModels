@@ -3,6 +3,8 @@
 #' @param p01 stand (stem), species 
 #' @param p02 stand (stem), height (dominant)
 #' @param p03 stand (stem), age (breast height)
+#' @export
+#' @rdname mdl_H_62
 mdl_H_62 <- function(p01, p02, p03){
 
 	xmdl.1<-function(p02, p03){

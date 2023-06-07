@@ -4,6 +4,8 @@
 #' @param p02 stand (stem), number of trees (random point)
 #' @param p03 stand (stem), diameter (breast height)
 #' @param p04 stand (stem), diameter (breast height)
+#' @export
+#' @rdname mdl_N_56
 mdl_N_56 <- function(p01, p02, p03, p04){
 
 	xmdl.1<-function(p02, p03, p04){

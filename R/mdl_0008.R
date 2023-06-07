@@ -3,6 +3,8 @@
 #' @param p01 single tree (stem), species 
 #' @param p02 single tree (stem), height 
 #' @param p03 single tree (stem), height (random point)
+#' @export
+#' @rdname mdl_D_8
 mdl_D_8 <- function(p01, p02, p03){
 
 	xmdl.1<-function(p02, p03){

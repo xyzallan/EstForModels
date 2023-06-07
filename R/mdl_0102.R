@@ -8,6 +8,8 @@
 #' @param p06 single tree (stem), age 
 #' @param p07 stand (stem), age 
 #' @param p08 stand (stem), basal area (breast height)
+#' @export
+#' @rdname mdl_D_102
 mdl_D_102 <- function(p01, p02, p03, p04, p05, p06, p07, p08){
 
 	xmdl.1<-function(p02, p03, p04, p05, p06, p07, p08){

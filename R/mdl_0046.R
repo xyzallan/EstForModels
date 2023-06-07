@@ -5,6 +5,8 @@
 #' @param p03 stand (stem), diameter (100 years old)
 #' @param p04 stand (stem), age 
 #' @param p05 stand (stem), age (random point)
+#' @export
+#' @rdname mdl_D_46
 mdl_D_46 <- function(p01, p02, p03, p04, p05){
 
 	xmdl.1<-function(p02, p03, p04, p05){
